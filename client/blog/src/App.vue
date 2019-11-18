@@ -42,7 +42,7 @@
         <!--github-->
         <div class="third_container">
           <ul>
-            <li></li>
+            <li class="iconfont icon-github"></li>
             <li></li>
           </ul>
         </div>
@@ -61,6 +61,28 @@ export default {
 <style lang="less">
   @import "css/reset";
   @import "css/common";
+  @import "assets/iconfont/iconfont.css";
+
+
+  @media all and (min-width: 1024px){
+    #app {
+      width: 1024px;
+      .nav {
+        width: 240px;
+      }
+    }
+  }
+
+  @media all and (max-width: 1024px){
+    #app {
+      /*width: 100%;*/
+      .nav {
+        width: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -70,9 +92,9 @@ export default {
   color: #2c3e50;
   display: flex;
   flex-direction: row;
-  width: 1000px;
+
+  height: 100%;
   margin: 0 auto;
-  background: cyan;
 
   .body_container {
     width: 100%;
@@ -80,9 +102,8 @@ export default {
 
   /*右侧导航*/
   .nav {
-    width: 240px;
     display: flex;
-    margin-left: 10px;
+    margin-left: 15px;
     flex-direction: column;
 
     .blackTextColor;
@@ -91,6 +112,8 @@ export default {
     .nav_top {
       .whiteColor;
       .boxShadow;
+
+      animation: _opacity_size .35s linear 0s 1;
       /*标题*/
       .title_container {
         background: @mainColor;
@@ -114,7 +137,7 @@ export default {
             text-align: left;
             padding: 10px 20px;
             transition: background-color;
-            transition-duration: .2s;
+            transition-duration: 0.3s;
             transition-timing-function: ease-in;
             cursor: pointer;
           }
@@ -132,7 +155,10 @@ export default {
 
     /*个人信息*/
     .nav_bottom {
-      margin-top: 10px;
+      opacity: 0;
+      animation: opacity_size .5s linear 0.35s 1;
+      animation-fill-mode: forwards;
+      margin-top: 15px;
       padding: 20px;
       .whiteColor;
       .boxShadow;
@@ -150,6 +176,7 @@ export default {
         }
       }
 
+      /*文章 分类*/
       .articles_container {
         display: flex;
         justify-content: center;
@@ -174,6 +201,16 @@ export default {
           border-left: 1px solid #eee;
           padding: 0 10px;
         }
+      }
+
+      .third_container {
+        display: flex;
+        justify-content: center;
+
+       li:hover {
+         color: black;
+         cursor: pointer;
+       }
       }
 
 
