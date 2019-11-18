@@ -23,18 +23,18 @@
       <div class="nav_bottom">
         <!--头像-->
         <div class="avatar_container">
-          <img src="" alt="">
-          <div class="name"></div>
+          <img src="https://kangzubin.com/images/avatar.jpg" alt="">
+          <div class="name">xiao2</div>
         </div>
 
         <!--文章/分类-->
         <div class="articles_container">
           <div class="ar_item_container">
-            <div class="ar_item_container_count">88</div>
+            <p class="ar_item_container_count">88</p>
             <div class="ar_item_container_category">文章</div>
           </div>
           <div class="ar_item_container">
-            <div class="ar_item_container_tag_count">5</div>
+            <p class="ar_item_container_tag_count">5</p>
             <div class="ar_item_container_tag_category">分类</div>
           </div>
         </div>
@@ -82,6 +82,7 @@ export default {
   .nav {
     width: 240px;
     display: flex;
+    margin-left: 10px;
     flex-direction: column;
 
     .blackTextColor;
@@ -132,10 +133,50 @@ export default {
     /*个人信息*/
     .nav_bottom {
       margin-top: 10px;
-      background: yellow;
+      padding: 20px;
+      .whiteColor;
+      .boxShadow;
       height: 300px;
       display: flex;
       flex-direction: column;
+      .avatar_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 15px;
+        img {
+          margin-bottom: 8px;
+        }
+      }
+
+      .articles_container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        .ar_item_container {
+          display: flex;
+          flex-direction: column;
+          color: #262a30;
+          p {
+            font-weight: 500;
+            font-size: 15px;
+          }
+          div {
+            color: #999;
+            font-size: 13px;
+          }
+          margin-left: 10px;
+
+        }
+
+        .ar_item_container:last-child {
+          border-left: 1px solid #eee;
+          padding: 0 10px;
+        }
+      }
+
+
     }
   }
 }
