@@ -6,10 +6,14 @@
 
 <script>
   var Markdown = require('markdown-it')
-  import hljs from 'highlight.js';
+  var hljs = require('highlight.js')
+  window.hljs = hljs
+  require('highlightjs-line-numbers.js')
+
     export default {
       name: "demo",
       mounted() {
+
         let md = Markdown({
 
           html:         false,        // Enable HTML tags in source
@@ -32,16 +36,25 @@
 
           highlight: function (str, lang) {
             if (lang && hljs.getLanguage(lang)) {
+
+
+
               try {
                 return '<pre class="hljs"><code>' +
                   hljs.highlight(lang, str, true).value +
                   '</code></pre>';
+
+                // hljs.initHighlightingOnLoad();
+                hljs.initLineNumbersOnLoad()
+
               } catch (__) {}
             }
 
             return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
           }
         })
+
+
 
         let result = md.render('```objc\n' +
           'typedef struct __CFRunLoop * CFRunLoopRef;\n' +
@@ -169,7 +182,6 @@
           '\n' +
           '```')
 
-
         let refOk = this.$refs.article
         refOk.innerHTML = result
 
@@ -194,6 +206,32 @@
     p {
       font-weight: 500;
       padding: 5px 0;
+      line-height: 3;
+    }
+
+    .hljs-ln-numbers {
+      text-align: center;
+      color: #ccc;
+      border-right: 1px solid #999;
+      vertical-align: top;
+      padding-right: 5px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .hljs-ln-code {
+      padding-left: 10px;
+    }
+    /* .hljs-ln-code,
+    .hljs-ln-numbers {
+      line-height: 14px;
+    } */
+    code {
+      white-space: pre-wrap;
+      overflow: auto;
     }
   }
 
