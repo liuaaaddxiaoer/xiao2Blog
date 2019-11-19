@@ -16,11 +16,11 @@
                 </div>
               </div>
             </div>
-            <img src="https://file.kangzubin.com/blog/static/20190219/0.jpeg" alt="" v-if="index == 0 ? true : false">
+            <img src="https://file.kangzubin.com/blog/static/20190219/0.jpeg" alt="" v-if="index % 2 ? true : false">
             <p>“代码覆盖率”是软件测试中的一种度量，用于描述工程中源代码被测试到的比例和程度。
 
               在做单元测试时，代码覆盖率经常被拿来作为衡量测试质量好坏的指标，同时也能在一定程度上检测出工程中的冗余代码。</p>
-            <button>阅读全文>></button>
+            <button @click="goToDetail(index)">阅读全文>></button>
           </div>
         </div>
       </section>
@@ -28,17 +28,27 @@
 </template>
 
 <script>
+
     export default {
       name: "Home",
       data() {
         return {
-          articles: [1, 2]
+          articles: [1, 2, 3, 4]
+        }
+      },
+
+      components: {
+      },
+      methods: {
+        goToDetail(index) {
+          this.$router.push('detail')
         }
       }
+
     }
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 
   @import "../css/common";
 
@@ -47,10 +57,8 @@
     flex-direction: column;
     padding-left: 15px;
     section {
-      display: flex;
       margin-bottom: 15px;
       flex-direction: column;
-      /*background: red;*/
       padding: 30px 25px;
       .whiteColor;
       .boxShadow;

@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view class="body_container"/>
+    <transition name="fade">
+      <router-view class="body_container"/>
+    </transition>
     <!--右侧导航区域-->
     <div class="nav">
 
@@ -54,7 +56,37 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted() {
+
+    let nav_top = document.querySelector('.nav_top')
+    let nav_bottom = document.querySelector('.nav_bottom')
+    let app = document.querySelector('#app')
+
+    window.addEventListener('scroll', (e) => {
+      let top = window.pageYOffset || document.documentElement.scrollTop
+
+      let mt = window.getComputedStyle(nav_bottom).marginTop
+      let mtF = parseFloat(mt)
+
+      let appMarginR = parseFloat(window.getComputedStyle(app).marginRight)
+      let appMarginT = parseFloat(window.getComputedStyle(app).marginTop)
+
+      if (top >= (nav_top.offsetHeight + mtF)) {
+        // alert(1)
+        nav_bottom.style.position = 'fixed'
+        nav_bottom.style.top = (-appMarginT).toString() + 'px'
+        nav_bottom.style.right = appMarginR.toString() + 'px'
+        nav_bottom.style.width = (parseFloat(window.getComputedStyle(nav_top).width) - 2 * 20).toString() + 'px'
+        nav_bottom.style.marginTop = 0
+      } else {
+        nav_bottom.style.position = 'inherit'
+        nav_bottom.style.marginTop = '15px'
+      }
+
+    })
+
+  },
 }
 </script>
 
@@ -62,6 +94,14 @@ export default {
   @import "css/reset";
   @import "css/common";
   @import "assets/iconfont/iconfont.css";
+
+  .fade-enter-active {
+    transition: opacity .3s;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
 
 
   @media all and (min-width: 1024px){
@@ -85,6 +125,7 @@ export default {
 
 
 #app {
+  position: relative;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -105,7 +146,7 @@ export default {
     display: flex;
     margin-left: 15px;
     flex-direction: column;
-
+    transition: width 0s linear 0s;
     .blackTextColor;
 
     /*导航顶部*/
