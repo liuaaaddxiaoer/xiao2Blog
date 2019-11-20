@@ -1,9 +1,6 @@
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1574078171521'); /* IE9 */
-  /*src: url('iconfont.eot?t=1574078171521#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
-  src: url('iconfont.woff?t=1574078171521') format('woff'),
-  url('iconfont.ttf?t=1574078171521') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  /*url('iconfont.svg?t=1574078171521#iconfont') format('svg'); !* iOS 4.1- *!*/
+  src: url('iconfont.eot?t=1574219733357'); /* IE9 */
+  src: url('iconfont.ttf?t=1574219733357') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
 }
 
 .iconfont {
@@ -22,6 +19,10 @@
   content: "\e620";
 }
 
+.icon-fuzhi:before {
+  content: "\e780";
+}
+
 .icon-lianjie:before {
   content: "\e611";
 }
@@ -32,5 +33,13 @@
 
 .icon-rili:before {
   content: "\e619";
+}
+
+.icon-changyongtubiao-xianxingdaochu-zhuanqu-:before {
+  content: "\e74a";
+}
+
+.icon-changyongtubiao-xianxingdaochu-zhuanqu-1:before {
+  content: "\e74b";
 }
 

@@ -35,9 +35,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-top: 12px;
       .item_container {
         display: flex;
         align-items: center;
+        i {
+          margin-right: 5px;
+        }
+        b {
+          text-decoration: underline;
+          cursor: pointer;
+        }
       }
       .line {
         width: 1px;

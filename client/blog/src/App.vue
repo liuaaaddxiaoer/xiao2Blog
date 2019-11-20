@@ -78,8 +78,9 @@ export default {
 
         let appMarginR = parseFloat(window.getComputedStyle(app).marginRight)
         let appMarginT = parseFloat(window.getComputedStyle(app).marginTop)
+        let appW = parseFloat(window.getComputedStyle(app).width)
 
-        if (top >= (nav_top.offsetHeight + mtF)) {
+        if (top >= (nav_top.offsetHeight + mtF) && appW >= 1024) {
           // alert(1)
           nav_bottom.style.position = 'fixed'
           nav_bottom.style.top = (-appMarginT).toString() + 'px'
@@ -116,7 +117,7 @@ export default {
     #app {
       width: 1024px;
       .nav {
-        width: 240px;
+        width: 200px;
       }
     }
   }
@@ -127,6 +128,9 @@ export default {
       .nav {
         width: 0;
         overflow: hidden;
+      }
+      .nav .nav_bottom {
+        width: 0;
       }
     }
   }
@@ -146,7 +150,7 @@ export default {
   margin: 0 auto;
 
   .body_container {
-    width: 100%;
+    flex: 1;
   }
 
   /*右侧导航*/
