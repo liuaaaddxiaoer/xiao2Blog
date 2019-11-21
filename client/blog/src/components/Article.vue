@@ -8,7 +8,7 @@
   var Markdown = require('markdown-it')
   var hljs = require('highlight.js')
   window.hljs = hljs
-  require('highlightjs-line-numbers.js')
+  // require('highlightjs-line-numbers.js')
 
   import ClipboardJS from 'clipboard'
 
@@ -27,16 +27,16 @@
 
       let md = Markdown({
 
-        html: false,        // Enable HTML tags in source
+        html: true,        // Enable HTML tags in source
         xhtmlOut: false,        // Use '/' to close single tags (<br />).
                                 // This is only for full CommonMark compatibility.
         breaks: false,        // Convert '\n' in paragraphs into <br>
         langPrefix: 'language-',  // CSS language prefix for fenced blocks. Can be
                                   // useful for external highlighters.
-        linkify: false,        // Autoconvert URL-like text to links
+        linkify: true,        // Autoconvert URL-like text to links
 
         // Enable some language-neutral replacement + quotes beautification
-        typographer: false,
+        typographer: true,
 
         // Double + single quotes replacement pairs, when typographer enabled,
         // and smartquotes on. Could be either a String or an Array.
@@ -46,167 +46,112 @@
         quotes: '“”‘’',
 
         highlight: (str, lang) => {
-
           this.copyIndex++;
 
           let index = this.copyIndex - 1;
+
+
+
 
           if (lang && hljs.getLanguage(lang)) {
 
             this.codes.push(str)
 
             try {
-              return '<pre class="hljs precopy" index=' + index + ' style="position: relative; margin-bottom: 5px"><code class="hljs">' +
-                hljs.highlight(lang, str, true).value +
-                '</code></pre>';
+              if (str && str.length > 1) {
+                return '<pre class="hljs precopy" index=' + index + ' style="position: relative; margin-bottom: 5px"><code class="hljs">' +
+                  hljs.highlight(lang, str, true).value +
+                  '</code></pre>';
+              } else {
+                return '<pre class="hljs" index=' + index + ' style="position: relative; margin-bottom: 5px"><code class="hljs">' +
+                  hljs.highlight(lang, str, true).value +
+                  '</code></pre>';
+              }
 
             } catch (__) {
             }
           }
 
-          return '<pre class="hljs" style="position: relative"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+          if (str && str.length > 1) {
+            return '<pre class="hljs precopy" style="position: relative"><code class="hljs">' + md.utils.escapeHtml(str) + '</code></pre>';
+          } else {
+            return '<pre class="hljs precopy" style="position: relative"><code class="hljs">' + md.utils.escapeHtml(str) + '</code></pre>';
+          }
         }
       })
 
 
-      let result = md.render('```objc\n' +
-        'typedef struct __CFRunLoop * CFRunLoopRef;\n' +
-        '```\n' +
-        '\n![图片](https://file.kangzubin.com/blog/static/20190219/0.jpeg)\n' +
-        ' CFRunLoopRef 是指向结构体 struct __CFRunLoop的指针类型\n' +
-        '```objc\n' +
-        'struct __CFRunLoop {\n' +
-        '    CFRuntimeBase _base;\n' +
-        '    pthread_mutex_t _lock;\t\t\t/* locked for accessing mode list */\n' +
-        '    __CFPort _wakeUpPort;\t\t\t// used for CFRunLoopWakeUp \n' +
-        '    Boolean _unused;\n' +
-        '    volatile _per_run_data *_perRunData;              // reset for runs of the run loop\n' +
-        '    pthread_t _pthread;\n' +
-        '    uint32_t _winthread;\n' +
-        '    CFMutableSetRef _commonModes;\n' +
-        '    CFMutableSetRef _commonModeItems;\n' +
-        '    CFRunLoopModeRef _currentMode;\n' +
-        '    CFMutableSetRef _modes;\n' +
-        '    struct _block_item *_blocks_head;\n' +
-        '    struct _block_item *_blocks_tail;\n' +
-        '    CFAbsoluteTime _runTime;\n' +
-        '    CFAbsoluteTime _sleepTime;\n' +
-        '    CFTypeRef _counterpart;\n' +
-        '};\n' +
+      let result = md.render('# [Nextcloud](https://nextcloud.com)  iOS app [![Releases](https://img.shields.io/github/release/nextcloud/ios.svg)](https://github.com/nextcloud/ios/releases/latest)\n' +
+        '\n' +
+        '[<img src="Animation.gif"\n' +
+        'alt="Download from App Store"\n' +
+        'height="400">](https://itunes.apple.com/us/app/nextcloud/id1125420102?mt=8)\n' +
+        '\n' +
+        '[![irc](https://img.shields.io/badge/IRC-%23nextcloud--mobile%20on%20freenode-blue.svg)](https://webchat.freenode.net/?channels=nextcloud-mobile)\n' +
+        '\n' +
+        'Check out https://nextcloud.com and follow us on [twitter.com/nextclouders](https://twitter.com/nextclouders) or [twitter.com/NextcloudiOS](https://twitter.com/NextcloudiOS)\n' +
+        '\n' +
+        '## How to contribute\n' +
+        'If you want to [contribute](https://nextcloud.com/contribute/) to Nextcloud, you are very welcome:\n' +
+        '\n' +
+        '- on our IRC channels [![irc](https://img.shields.io/badge/IRC-%23nextcloud%20on%20freenode-orange.svg)](https://webchat.freenode.net/?channels=nextcloud) and [![irc](https://img.shields.io/badge/IRC-%23nextcloud--mobile%20on%20freenode-blue.svg)](https://webchat.freenode.net/?channels=nextcloud-mobile) on freenode\n' +
+        '- our forum at https://help.nextcloud.com/c/clients/ios\n' +
+        '- for translations of the app on [Transifex](https://www.transifex.com/nextcloud/nextcloud/dashboard/)\n' +
+        '- opening issues and PRs (including a corresponding issue)\n' +
+        '\n' +
+        '## Contribution Guidelines & License\n' +
+        '\n' +
+        '[GPLv3](LICENSE.txt) with [Apple app store exception](COPYING.iOS).\n' +
+        '\n' +
+        'Nextcloud doesn\'t require a CLA (Contributor License Agreement). The copyright belongs to all the individual contributors. Therefore we recommend that every contributor adds following line to the header of a file, if they changed it substantially:\n' +
         '\n' +
         '```\n' +
-        '\n' +
-        '```objc\n' +
-        'typedef struct __CFRunLoopSource * CFRunLoopSourceRef;\n' +
-        '```\n' +
-        'CFRunLoopSourceRef是指向结构体struct __CFRunLoopSource的指针类型。\n' +
-        '```objc\n' +
-        'struct __CFRunLoopSource {\n' +
-        '    CFRuntimeBase _base;\n' +
-        '    uint32_t _bits;\n' +
-        '    pthread_mutex_t _lock;\n' +
-        '    CFIndex _order;\t\t\t/* immutable */\n' +
-        '    CFMutableBagRef _runLoops;\n' +
-        '    union {\n' +
-        '\tCFRunLoopSourceContext version0;\t/* immutable, except invalidation */\n' +
-        '        CFRunLoopSourceContext1 version1;\t/* immutable, except invalidation */\n' +
-        '    } _context;\n' +
-        '};\n' +
-        '\n' +
+        '@copyright Copyright (c) <year>, <your name> (<your email address>)\n' +
         '```\n' +
         '\n' +
-        '```objc\n' +
-        'typedef struct __CFRunLoopObserver * CFRunLoopObserverRef;\n' +
-        '```\n' +
-        'CFRunLoopObserverRef是指向结构体 struct __CFRunLoopObserver的指针类型。\n' +
-        '```objc\n' +
-        'struct __CFRunLoopObserver {\n' +
-        '    CFRuntimeBase _base;\n' +
-        '    pthread_mutex_t _lock;\n' +
-        '    CFRunLoopRef _runLoop;\n' +
-        '    CFIndex _rlCount;\n' +
-        '    CFOptionFlags _activities;\t\t/* immutable */\n' +
-        '    CFIndex _order;\t\t\t/* immutable */\n' +
-        '    CFRunLoopObserverCallBack _callout;\t/* immutable */\n' +
-        '    CFRunLoopObserverContext _context;\t/* immutable, except invalidation */\n' +
-        '};\n' +
+        'Please read the [Code of Conduct](https://nextcloud.com/code-of-conduct/). This document offers some guidance to ensure Nextcloud participants can cooperate effectively in a positive and inspiring atmosphere, and to explain how together we can strengthen and support each other.\n' +
         '\n' +
-        '```\n' +
+        'More information how to contribute: [https://nextcloud.com/contribute/](https://nextcloud.com/contribute/)\n' +
         '\n' +
-        '```objc\n' +
-        'typedef struct CF_BRIDGED_MUTABLE_TYPE(NSTimer) __CFRunLoopTimer * CFRunLoopTimerRef;\n' +
-        '```\n' +
-        'CFRunLoopTimerRef是指向结构体 struct CF_BRIDGED_MUTABLE_TYPE(NSTimer)的指针类型。\n' +
-        '```objc\n' +
-        'struct __CFRunLoopTimer {\n' +
-        '    CFRuntimeBase _base;\n' +
-        '    uint16_t _bits;\n' +
-        '    pthread_mutex_t _lock;\n' +
-        '    CFRunLoopRef _runLoop;\n' +
-        '    CFMutableSetRef _rlModes;\n' +
-        '    CFAbsoluteTime _nextFireDate;\n' +
-        '    CFTimeInterval _interval;\t\t/* immutable */\n' +
-        '    CFTimeInterval _tolerance;          /* mutable */\n' +
-        '    uint64_t _fireTSR;\t\t\t/* TSR units */\n' +
-        '    CFIndex _order;\t\t\t/* immutable */\n' +
-        '    CFRunLoopTimerCallBack _callout;\t/* immutable */\n' +
-        '    CFRunLoopTimerContext _context;\t/* immutable, except invalidation */\n' +
-        '};\n' +
+        '## Start contributing\n' +
+        'Fork this repository and contribute back using pull requests to the master branch!\n' +
         '\n' +
-        '```\n' +
+        'Easy starting points are also reviewing [pull requests](https://github.com/nextcloud/ios/pulls) and working on [starter issues](https://github.com/nextcloud/ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22starter+issue%22).\n' +
         '\n' +
-        '另外runloop.c中还有另外一个结构体指针。\n' +
-        '```objc\n' +
-        'typedef struct __CFRunLoopMode *CFRunLoopModeRef;\n' +
-        '```\n' +
-        'CFRunLoopModeRef是指向结构体struct __CFRunLoopMode的指针类型\n' +
-        '```objc\n' +
-        'struct __CFRunLoopMode {\n' +
-        '    CFRuntimeBase _base;\n' +
-        '    pthread_mutex_t _lock;\t/* must have the run loop locked before locking this */\n' +
-        '    CFStringRef _name;\n' +
-        '    Boolean _stopped;\n' +
-        '    char _padding[3];\n' +
-        '    CFMutableSetRef _sources0;\n' +
-        '    CFMutableSetRef _sources1;\n' +
-        '    CFMutableArrayRef _observers;\n' +
-        '    CFMutableArrayRef _timers;\n' +
-        '    CFMutableDictionaryRef _portToV1SourceMap;\n' +
-        '    __CFPortSet _portSet;\n' +
-        '    CFIndex _observerMask;\n' +
-        '#if USE_DISPATCH_SOURCE_FOR_TIMERS\n' +
-        '    dispatch_source_t _timerSource;\n' +
-        '    dispatch_queue_t _queue;\n' +
-        '    Boolean _timerFired; // set to true by the source when a timer has fired\n' +
-        '    Boolean _dispatchTimerArmed;\n' +
-        '#endif\n' +
-        '#if USE_MK_TIMER_TOO\n' +
-        '    mach_port_t _timerPort;\n' +
-        '    Boolean _mkTimerArmed;\n' +
-        '#endif\n' +
-        '#if DEPLOYMENT_TARGET_WINDOWS\n' +
-        '    DWORD _msgQMask;\n' +
-        '    void (*_msgPump)(void);\n' +
-        '#endif\n' +
-        '    uint64_t _timerSoftDeadline; /* TSR */\n' +
-        '    uint64_t _timerHardDeadline; /* TSR */\n' +
-        '};\n' +
+        '## Support\n' +
         '\n' +
-        '```')
+        'If you need assistance or want to ask a question about the iOS app, you are welcome to [ask for support](https://help.nextcloud.com/c/clients/ios) in our forums or the [IRC-Channel](https://webchat.freenode.net/?channels=nextcloud-mobile). If you have found a bug, feel free to [open a new Issue on GitHub](https://github.com/nextcloud/ios/issues). Keep in mind, that this repository only manages the iOS app. If you find bugs or have problems with the server/backend, you should ask the [Nextcloud server team](https://github.com/nextcloud/server) for help!\n' +
+        '\n' +
+        '## TestFlight \n' +
+        '\n' +
+        'Do you want try the last version in development of Nextcloud iOS ? Simple, follow this simple step\n' +
+        '\n' +
+        '[Apple TestFlight](https://testflight.apple.com/join/GjNbfo2a)\n')
 
       let refOk = this.$refs.article
       refOk.innerHTML = result
 
       // init line
-      hljs.initLineNumbersOnLoad()
+      // hljs.initLineNumbersOnLoad()
 
       // 复制
       this.copy()
+
+      // a blank
+      this.blank()
     },
 
     methods: {
+
+      blank() {
+        let aTags = document.querySelectorAll('.article a')
+        aTags.forEach((value, index) => {
+          value.setAttribute('target', '_blank')
+        })
+      },
+
       copy() {
-        let codes = document.querySelectorAll('code')
+        let codes = document.querySelectorAll('pre code')
         let preCodes = document.querySelectorAll('.precopy')
         let index = 0;
         codes.forEach((code) => {
@@ -272,46 +217,182 @@
   .article {
     text-align: left;
     img {
-      width: 100%;
+      /*width: 100%;*/
       max-height: 400px;
-      margin: 10px 0;
+      margin: 0px 0;
+      vertical-align: center;
     }
 
     img::selection {
       background: lightblue;
     }
 
-    p {
-      font-weight: 500;
-      padding: 5px 0;
-      line-height: 3;
-      font-size: 14px;
-      color: #555;
+    p,a,ul {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 16px;
     }
 
-    .hljs-ln-numbers {
-      text-align: center;
-      color: #ccc;
-      border-right: 1px solid #999;
-      vertical-align: top;
-      padding-right: 5px;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    ul {
+      line-height: 1;
     }
-    .hljs-ln-code {
-      padding-left: 10px;
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+
     }
-    /* .hljs-ln-code,
-    .hljs-ln-numbers {
-      line-height: 14px;
-    } */
+
+    li {
+      list-style: disc;
+    }
+
+    pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f6f8fa;
+      border-radius: 3px;
+      margin: 1em 0px;
+    }
+
+    ul,ol {
+      display: block;
+      /*list-style-type: disc;*/
+      margin-block-start: 0.4em;
+      /*margin-block-end: 1em;*/
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+
+    }
+
+    ul ul {
+      list-style-type: circle;
+    }
+
+    li {
+      line-height: 1.2;
+    }
+
+    ol li {
+      padding-left: 0em;
+    }
+
+    li+li {
+      margin-top: 0.25em;
+      line-height: 1.5;
+      font-size: 16px;
+      color: #24292e;
+    }
+
+    h2,h1 {
+      padding-bottom: .3em;
+      border-bottom: 1px solid #eaecef;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    hr {
+      height: .25em;
+      padding: 0;
+      margin: 24px 0;
+      background-color: #e1e4e8;
+      border: 0;
+    }
+
+    blockquote {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      padding: 0 1em;
+      color: #6a737d;
+      border-left: .25em solid #dfe2e5;
+    }
+
+    table {
+      display: block;
+      width: 100%;
+      overflow: auto;
+      margin-top: 0;
+      margin-bottom: 16px;
+      border-spacing: 0;
+      border-collapse: collapse;
+
+    }
+
+    th {
+      border: 1px solid #dfe2e5;
+      font-weight: 600;
+      padding: 0;
+      display: table-cell;
+      vertical-align: inherit;
+    }
+
+    table,thead,tr, th, tbody, td, img{
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+
+    tbody {
+      display: table-row-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+
+    tr {
+      display: table-row;
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1;
+    }
+
+    td {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+
+    th {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+      font-weight: 600;
+      padding: 0;
+      display: table-cell;
+      vertical-align: inherit;
+    }
+
+    thead {
+      display: table-header-group;
+      vertical-align: middle;
+      border-color: inherit;
+    }
+
     code {
       white-space: pre-wrap;
       overflow: auto;
+      color: #032f62;
+      font-size: 85%;
+      line-height: 1.45;
+      background: rgba(27,31,35,.05);
+      padding: .2em .4em;
+      border-radius: 3px;
+    }
+
+    .hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 0.5em;
+      background: #f6f8fa;
     }
 
     .precopy {
@@ -322,11 +403,30 @@
         right: 15px;
         top: 15px;
         opacity: 0;
-        background-color: grey;
+        background-color: rgba(0,0,0,0.3);
         cursor: pointer;
         transition: opacity .2s linear;
         z-index: 100;
       }
+    }
+    .hljs-keyword,.hljs-title,.hljs-built_in,.hljs-string,.hljs-number{
+      color: #d73a49;
+      font-size: 85%;
+      line-height: 1.45;
+      font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    }
+
+
+    .hljs-string,.hljs-number {
+      color: #032f62;
+    }
+
+    .hljs-title {
+      color: #6f42c1;
+    }
+
+    .hljs-built_in {
+      color: #005cc5;
     }
 
   }

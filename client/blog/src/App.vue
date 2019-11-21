@@ -85,7 +85,7 @@ export default {
           nav_bottom.style.position = 'fixed'
           nav_bottom.style.top = (-appMarginT).toString() + 'px'
           nav_bottom.style.right = appMarginR.toString() + 'px'
-          nav_bottom.style.width = (parseFloat(window.getComputedStyle(nav_top).width) - 2 * 20).toString() + 'px'
+          nav_bottom.style.width = (parseFloat(window.getComputedStyle(nav_top).width)).toString() + 'px'
         } else {
           nav_bottom.style.position = 'inherit'
         }
@@ -138,11 +138,11 @@ export default {
 
 #app {
   position: relative;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoj;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #24292e;
   display: flex;
   flex-direction: row;
 

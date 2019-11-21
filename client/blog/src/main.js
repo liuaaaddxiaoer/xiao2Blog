@@ -10,7 +10,7 @@ import {Message} from 'element-ui'
 Vue.prototype.$message = Message;
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 /* eslint-disable no-new */
 new Vue({
