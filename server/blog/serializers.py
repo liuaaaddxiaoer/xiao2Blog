@@ -1,19 +1,25 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-from blog.models import Test
+from blog.models import Article, Category, Tag
 
-
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-
+class TagSeralizer(serializers.ModelSerializer):
 
     class Meta:
-        model = User
-        fields = ['id', 'username', 'email', 'groups']
+        model = Tag
+        fields = '__all__'
 
-
-class TestSerializer(serializers.HyperlinkedModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Test
-        fields = ['id', 'name']
+        model = Category
+        fields = '__all__'
+
+class ArticleListSerializer(serializers.ModelSerializer):
+
+    category = CategorySerializer()
+    tags = TagSeralizer(many=True)
+
+    class Meta:
+        model = Article
+        exclude = ['is_delete']
