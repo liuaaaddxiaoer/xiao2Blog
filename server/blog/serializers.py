@@ -11,13 +11,19 @@ class TagSeralizer(serializers.ModelSerializer):
 
 class CategorySerializer(serializers.ModelSerializer):
 
+    articles = serializers.SerializerMethodField()
+
     class Meta:
         model = Category
         fields = '__all__'
 
+    def get_articles(self, obj):
+        return ArticleListSerializer(obj.category.all(), many=True).data
+
 class ArticleListSerializer(serializers.ModelSerializer):
 
-    category = CategorySerializer()
+    created_time = serializers.DateTimeField(format='%Y-%m-%d %H:%M:%S')
+    category = serializers.CharField(source='category.name')
     tags = TagSeralizer(many=True)
 
     class Meta:

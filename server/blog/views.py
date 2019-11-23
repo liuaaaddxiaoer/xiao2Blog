@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from blog.models import Article, Category, Tag
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
-from blog.serializers import ArticleListSerializer
+from blog.serializers import ArticleListSerializer, CategorySerializer
 
 
 class Page(PageNumberPagination):
@@ -73,9 +73,14 @@ class ArticleList(APIView):
     def post(self, request):
 
         post_data = request.POST
+
+        # 判断是否是某个分类下的文章列表
+        category = post_data.get('category', None)
+
         page_size = post_data.get('pagesize', 10)
 
-        articleQuerySet = Article.objects.filter(is_delete=False)
+        articleQuerySet = Article.objects.filter(is_delete=False, category__name=category) if category else Article.objects.filter(is_delete=False)
+
         page = Page()
         page.page_size = page_size
         try:
@@ -85,7 +90,15 @@ class ArticleList(APIView):
         except Exception as err:
             return my_response(code=-1, msg=err.default_detail)
 
-# class CategoryList(APIView):
-#     def post(self, request):
+class CategoryList(APIView):
+    """
+    获取文章分类
+    """
+    def post(self, request):
+        categorys = Category.objects.all()
 
+        serias = CategorySerializer(categorys, many=True)
+        print(serias.data)
+
+        return Response(serias.data)
 
