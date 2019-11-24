@@ -4,10 +4,10 @@
   </div>
 </template>
 
+
 <script>
   var Markdown = require('markdown-it')
-  var hljs = require('highlight.js')
-  window.hljs = hljs
+  // var hljs = require('highlight.js')
   // require('highlightjs-line-numbers.js')
 
   import ClipboardJS from 'clipboard'
@@ -24,6 +24,8 @@
     },
 
     mounted() {
+      var hljs = window.hljs
+
 
       let md = Markdown({
 
@@ -212,7 +214,7 @@
 </script>
 
 <style lang="less">
-  @import '../../node_modules/highlight.js/styles/vs2015.css';
+  /*@import '../../node_modules/highlight.js/styles/vs2015.css';*/
 
   .article {
     text-align: left;

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home'
+
+var Home = () => import('@/pages/Home')
 
 var Detail = () => import('@/pages/Detail')
 
