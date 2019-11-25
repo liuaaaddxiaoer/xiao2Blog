@@ -1,0 +1,84 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 09:58:53 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:3000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 09:59:00 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:3000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 09:59:35 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:3000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 09:59:51 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:3000).
+bind(): Address already in use [core/socket.c line 769]
