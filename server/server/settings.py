@@ -127,6 +127,8 @@ USE_TZ = False
 
 STATIC_URL = '/static2/'
 
+STATIC_ROOT = '/root/site/xiao2Blog/server/static'
+
 
 BASE_LOG_DIR = os.path.join(BASE_DIR, "log")
 LOGGING = {
