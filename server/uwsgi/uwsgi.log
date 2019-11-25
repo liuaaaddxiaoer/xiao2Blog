@@ -51,3 +51,549 @@ Python auto-reloader enabled
 [pid: 5571|app: 0|req: 11/11] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:39:04 2019] GET /api2/api/articleList => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
 [pid: 5571|app: 0|req: 12/12] 119.80.187.222 () {48 vars in 838 bytes} [Mon Nov 25 15:45:49 2019] GET /api2/ => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
 [pid: 5571|app: 0|req: 13/13] 119.80.187.222 () {48 vars in 838 bytes} [Mon Nov 25 15:47:09 2019] GET /api2/ => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./server/urls.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 5571)...
+Gracefully killing worker 2 (pid: 5572)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/site/xiao2Blog/server
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:3000)
+running /root/site/xiao2Blog/server/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 15:50:45 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xc499c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xc499c0 pid: 5569 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 5569)
+spawned uWSGI worker 1 (pid: 6522, cores: 1)
+spawned uWSGI worker 2 (pid: 6523, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 11 ***
+Python auto-reloader enabled
+Mon Nov 25 15:51:15 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Nov 25 15:51:15 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 15:51:23 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x127ff90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x127ff90 pid: 6563 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6563)
+spawned uWSGI worker 1 (pid: 6566, cores: 1)
+spawned uWSGI worker 2 (pid: 6567, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 11 ***
+Python auto-reloader enabled
+[pid: 6566|app: 0|req: 1/1] 119.80.187.222 () {50 vars in 869 bytes} [Mon Nov 25 15:51:27 2019] GET /api2/ => generated 77 bytes in 97 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 6566|app: 0|req: 2/2] 119.80.187.222 () {48 vars in 848 bytes} [Mon Nov 25 15:51:30 2019] GET /api2/admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 6567|app: 0|req: 1/3] 119.80.187.222 () {48 vars in 850 bytes} [Mon Nov 25 15:51:30 2019] GET /api2/admin/ => generated 27 bytes in 197 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6566|app: 0|req: 3/4] 119.80.187.222 () {46 vars in 843 bytes} [Mon Nov 25 15:51:45 2019] GET /api2/api/articleList => generated 27 bytes in 61 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 6566|app: 0|req: 4/5] 119.80.187.222 () {48 vars in 778 bytes} [Mon Nov 25 15:53:04 2019] POST /api2/api/articleList => generated 58 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 144 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./blog/views.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 6566)...
+Gracefully killing worker 2 (pid: 6567)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/site/xiao2Blog/server
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:3000)
+running /root/site/xiao2Blog/server/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 15:56:31 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x26569c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26569c0 pid: 6563 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6563)
+spawned uWSGI worker 1 (pid: 6865, cores: 1)
+spawned uWSGI worker 2 (pid: 6866, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 11 ***
+Python auto-reloader enabled
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 6865|app: 0|req: 1/1] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:56:31 2019] GET /api2/api/articleList => generated 27 bytes in 177 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+Mon Nov 25 15:56:44 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Nov 25 15:56:44 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 15:57:10 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xdc6fa0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xdc6fa0 pid: 6908 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6908)
+spawned uWSGI worker 1 (pid: 6911, cores: 1)
+spawned uWSGI worker 2 (pid: 6912, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 11 ***
+Python auto-reloader enabled
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 6911|app: 0|req: 1/1] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:57:12 2019] GET /api2/api/articleList => generated 27 bytes in 172 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 2/2] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:57:14 2019] GET /api2/api/articleList => generated 27 bytes in 40 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 3/3] 119.80.187.222 () {48 vars in 870 bytes} [Mon Nov 25 15:57:28 2019] GET /api2/api/articleList/ => generated 27 bytes in 31 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 4/4] 119.80.187.222 () {50 vars in 901 bytes} [Mon Nov 25 15:58:23 2019] GET /api2/api/articleList/ => generated 27 bytes in 30 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 5/5] 119.80.187.222 () {48 vars in 778 bytes} [Mon Nov 25 15:59:33 2019] POST /api2/api/articleList => generated 58 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 6/6] 119.80.187.222 () {44 vars in 730 bytes} [Mon Nov 25 15:59:37 2019] GET /api2/api/articleList => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 7/7] 119.80.187.222 () {44 vars in 730 bytes} [Mon Nov 25 15:59:38 2019] GET /api2/api/articleList => generated 58 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 8/8] 119.80.187.222 () {46 vars in 843 bytes} [Mon Nov 25 15:59:46 2019] GET /api2/api/articleList => generated 27 bytes in 30 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 9/9] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:59:48 2019] GET /api2/api/articleList => generated 27 bytes in 33 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 6911|app: 0|req: 10/10] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:59:49 2019] GET /api2/api/articleList => generated 27 bytes in 55 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6912|app: 0|req: 1/11] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:59:49 2019] GET /api2/api/articleList => generated 27 bytes in 228 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 11/12] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:59:49 2019] GET /api2/api/articleList => generated 27 bytes in 44 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6912|app: 0|req: 2/13] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:59:49 2019] GET /api2/api/articleList => generated 27 bytes in 30 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 12/14] 119.80.187.222 () {50 vars in 899 bytes} [Mon Nov 25 15:59:50 2019] GET /api2/api/articleList => generated 27 bytes in 32 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 13/15] 119.80.187.222 () {52 vars in 921 bytes} [Mon Nov 25 15:59:53 2019] GET /api2/api/articleList => generated 27 bytes in 29 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 14/16] 119.80.187.222 () {52 vars in 933 bytes} [Mon Nov 25 15:59:55 2019] GET /api2/api/articleList%E3%80%81 => generated 27 bytes in 32 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 15/17] 119.80.187.222 () {52 vars in 923 bytes} [Mon Nov 25 16:00:00 2019] GET /api2/api/articleList/ => generated 27 bytes in 30 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 16/18] 119.80.187.222 () {40 vars in 675 bytes} [Mon Nov 25 16:00:31 2019] GET /api2/api/articleList => generated 27 bytes in 30 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 17/19] 119.80.187.222 () {48 vars in 778 bytes} [Mon Nov 25 16:00:55 2019] POST /api2/api/articleList => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 18/20] 119.80.187.222 () {48 vars in 780 bytes} [Mon Nov 25 16:00:59 2019] POST /api2/api/articleList2 => generated 58 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 19/21] 119.80.187.222 () {48 vars in 784 bytes} [Mon Nov 25 16:01:04 2019] POST /api2/api/articleList222 => generated 58 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 20/22] 119.80.187.222 () {48 vars in 784 bytes} [Mon Nov 25 16:01:08 2019] POST /api2/api/articleList222 => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 21/23] 119.80.187.222 () {48 vars in 784 bytes} [Mon Nov 25 16:01:14 2019] POST /api2/api/articleList222 => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 22/24] 119.80.187.222 () {48 vars in 754 bytes} [Mon Nov 25 16:01:21 2019] POST /api2/api => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 23/25] 119.80.187.222 () {48 vars in 756 bytes} [Mon Nov 25 16:01:26 2019] POST /api2/api/ => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 24/26] 119.80.187.222 () {48 vars in 778 bytes} [Mon Nov 25 16:01:30 2019] POST /api2/api/articleList => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 25/27] 119.80.187.222 () {48 vars in 778 bytes} [Mon Nov 25 16:01:37 2019] POST /api2/api/articleList => generated 58 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 26/28] 119.80.187.222 () {50 vars in 865 bytes} [Mon Nov 25 16:01:42 2019] POST /api2/api/articleList => generated 58 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 27/29] 119.80.187.222 () {50 vars in 896 bytes} [Mon Nov 25 16:02:34 2019] GET /api2/api/articleList => generated 27 bytes in 30 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 28/30] 129.28.169.244 () {36 vars in 512 bytes} [Mon Nov 25 16:03:38 2019] GET /api2/api/articleList => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 29/31] 129.28.169.244 () {38 vars in 538 bytes} [Mon Nov 25 16:03:43 2019] POST /api2/api/articleList => generated 58 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 30/32] 119.80.187.222 () {52 vars in 921 bytes} [Mon Nov 25 16:05:37 2019] GET /api2/api/articleList => generated 27 bytes in 33 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 31/33] 119.80.187.222 () {52 vars in 901 bytes} [Mon Nov 25 16:05:46 2019] GET /api2/admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 6912|app: 0|req: 3/34] 119.80.187.222 () {52 vars in 903 bytes} [Mon Nov 25 16:05:46 2019] GET /api2/admin/ => generated 27 bytes in 14 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 32/35] 119.80.187.222 () {52 vars in 903 bytes} [Mon Nov 25 16:06:56 2019] GET /api2/admin/ => generated 27 bytes in 16 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6912|app: 0|req: 4/36] 119.80.187.222 () {52 vars in 903 bytes} [Mon Nov 25 16:06:58 2019] GET /api2/admin/ => generated 27 bytes in 13 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 33/37] 119.80.187.222 () {52 vars in 913 bytes} [Mon Nov 25 16:08:44 2019] GET /api2/api2/admin/ => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 6911|app: 0|req: 34/38] 119.80.187.222 () {52 vars in 901 bytes} [Mon Nov 25 16:09:05 2019] GET /api2/admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 6912|app: 0|req: 5/39] 119.80.187.222 () {52 vars in 903 bytes} [Mon Nov 25 16:09:05 2019] GET /api2/admin/ => generated 27 bytes in 15 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./server/settings.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 6911)...
+Gracefully killing worker 2 (pid: 6912)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/site/xiao2Blog/server
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:3000)
+running /root/site/xiao2Blog/server/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 16:17:33 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0xfbf9d0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/logging/config.py", line 558, in configure
+    handler = self.configure_handler(handlers[name])
+  File "/usr/local/python3/lib/python3.6/logging/config.py", line 731, in configure_handler
+    result = factory(**kwargs)
+  File "/usr/local/python3/lib/python3.6/logging/handlers.py", line 150, in __init__
+    BaseRotatingHandler.__init__(self, filename, mode, encoding, delay)
+  File "/usr/local/python3/lib/python3.6/logging/handlers.py", line 57, in __init__
+    logging.FileHandler.__init__(self, filename, mode, encoding, delay)
+  File "/usr/local/python3/lib/python3.6/logging/__init__.py", line 1031, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/local/python3/lib/python3.6/logging/__init__.py", line 1060, in _open
+    return open(self.baseFilename, self.mode, encoding=self.encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/site/xiao2Blog/server/log/blog_collect.log'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./server/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/django/utils/log.py", line 76, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/local/python3/lib/python3.6/logging/config.py", line 795, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/local/python3/lib/python3.6/logging/config.py", line 566, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'collect': [Errno 2] No such file or directory: '/root/site/xiao2Blog/server/log/blog_collect.log'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6908)
+spawned uWSGI worker 1 (pid: 8047, cores: 1)
+spawned uWSGI worker 2 (pid: 8048, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 11 ***
+Python auto-reloader enabled
+Mon Nov 25 16:17:51 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Nov 25 16:17:51 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 16:20:12 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x102cfa0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x102cfa0 pid: 8238 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8238)
+spawned uWSGI worker 1 (pid: 8241, cores: 1)
+spawned uWSGI worker 2 (pid: 8242, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 14 ***
+Python auto-reloader enabled
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 8241|app: 0|req: 1/1] 119.80.187.222 () {52 vars in 923 bytes} [Mon Nov 25 16:20:13 2019] GET /api2/api/articleList/ => generated 27 bytes in 168 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+Mon Nov 25 16:22:38 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Mon Nov 25 16:22:38 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 16:23:40 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x14fdf90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14fdf90 pid: 8457 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8457)
+spawned uWSGI worker 1 (pid: 8459, cores: 1)
+spawned uWSGI worker 2 (pid: 8460, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 14 ***
+Python auto-reloader enabled
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 8459|app: 0|req: 1/1] 119.80.187.222 () {52 vars in 923 bytes} [Mon Nov 25 16:23:43 2019] GET /api2/api/articleList/ => generated 7046 bytes in 151 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8459|app: 0|req: 2/2] 119.80.187.222 () {56 vars in 1084 bytes} [Mon Nov 25 16:23:56 2019] GET /api2/api/articleList/? => generated 7046 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8459|app: 0|req: 3/3] 119.80.187.222 () {54 vars in 990 bytes} [Mon Nov 25 16:24:42 2019] GET /api2/admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 0)
+[pid: 8460|app: 0|req: 1/4] 119.80.187.222 () {54 vars in 992 bytes} [Mon Nov 25 16:24:43 2019] GET /api2/admin/ => generated 0 bytes in 111 msecs (HTTP/1.1 302) 7 headers in 275 bytes (1 switches on core 0)
+[pid: 8459|app: 0|req: 4/5] 119.80.187.222 () {54 vars in 1039 bytes} [Mon Nov 25 16:24:43 2019] GET /api2/admin/login/?next=/api2/admin/ => generated 1841 bytes in 43 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./server/settings.py has been modified
+[uwsgi-python-reloader] module/file ./server/settings.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8459)...
+Gracefully killing worker 2 (pid: 8460)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/site/xiao2Blog/server
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:3000)
+running /root/site/xiao2Blog/server/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 16:26:08 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x11449c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x11449c0 pid: 8457 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8457)
+spawned uWSGI worker 1 (pid: 8622, cores: 1)
+spawned uWSGI worker 2 (pid: 8623, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 14 ***
+Python auto-reloader enabled
+[uwsgi-python-reloader] module/file ./server/settings.py has been modified
+[uwsgi-python-reloader] module/file ./server/settings.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8622)...
+Gracefully killing worker 2 (pid: 8623)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/site/xiao2Blog/server
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:3000)
+running /root/site/xiao2Blog/server/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Nov 25 16:31:31 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x26219c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26219c0 pid: 8457 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8457)
+spawned uWSGI worker 1 (pid: 8976, cores: 1)
+spawned uWSGI worker 2 (pid: 8977, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 14 ***
+Python auto-reloader enabled
+[pid: 8976|app: 0|req: 1/1] 119.80.187.222 () {54 vars in 1039 bytes} [Mon Nov 25 16:31:52 2019] GET /api2/admin/login/?next=/api2/admin/ => generated 1844 bytes in 149 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+/root/site/xiao2Blog/server/venv/lib/python3.6/site-packages/rest_framework/pagination.py:200: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'blog.models.Article'> QuerySet.
+  paginator = self.django_paginator_class(queryset, page_size)
+[pid: 8976|app: 0|req: 2/2] 119.80.187.222 () {54 vars in 1062 bytes} [Mon Nov 25 16:31:58 2019] GET /api2/api/articleList/? => generated 7056 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 3/3] 119.80.187.222 () {58 vars in 1113 bytes} [Mon Nov 25 16:32:04 2019] POST /api2/api/articleList/ => generated 7057 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 4/4] 119.80.187.222 () {52 vars in 1030 bytes} [Mon Nov 25 16:32:29 2019] GET /api2/api/articleList/ => generated 7056 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 5/5] 119.80.187.222 () {52 vars in 1051 bytes} [Mon Nov 25 16:32:32 2019] GET /api2/api/articleList/?format=api => generated 7111 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 6/6] 119.80.187.222 () {52 vars in 1064 bytes} [Mon Nov 25 16:32:35 2019] GET /api2/api/articleList/?format=json => generated 58 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 155 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 7/7] 119.80.187.222 () {50 vars in 943 bytes} [Mon Nov 25 16:33:24 2019] GET /api2/api/adsa => generated 77 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 8/8] 119.80.187.222 () {50 vars in 935 bytes} [Mon Nov 25 16:33:28 2019] GET /api2/api/ => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 9/9] 119.80.187.222 () {50 vars in 959 bytes} [Mon Nov 25 16:33:31 2019] GET /api2/api/articleList/ => generated 7056 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 10/10] 119.80.187.222 () {50 vars in 957 bytes} [Mon Nov 25 16:33:37 2019] GET /api2/api/articleLis2 => generated 77 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 11/11] 119.80.187.222 () {50 vars in 959 bytes} [Mon Nov 25 16:33:41 2019] GET /api2/api/articleList/ => generated 7056 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 333 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 12/12] 119.80.187.222 () {50 vars in 939 bytes} [Mon Nov 25 16:34:08 2019] GET /api2/admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 275 bytes (1 switches on core 0)
+[pid: 8977|app: 0|req: 1/13] 119.80.187.222 () {50 vars in 986 bytes} [Mon Nov 25 16:34:08 2019] GET /api2/admin/login/?next=/api2/admin/ => generated 1844 bytes in 141 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 13/14] 119.80.187.222 () {60 vars in 1260 bytes} [Mon Nov 25 16:34:13 2019] POST /api2/admin/login/?next=/api2/admin/ => generated 27 bytes in 200 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 14/15] 119.80.187.222 () {50 vars in 986 bytes} [Mon Nov 25 16:34:15 2019] GET /api2/admin/login/?next=/api2/admin/ => generated 1844 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 15/16] 119.80.187.222 () {60 vars in 1260 bytes} [Mon Nov 25 16:34:19 2019] POST /api2/admin/login/?next=/api2/admin/ => generated 27 bytes in 182 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 16/17] 119.80.187.222 () {50 vars in 986 bytes} [Mon Nov 25 16:34:38 2019] GET /api2/admin/login/?next=/api2/admin/ => generated 1844 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 17/18] 119.80.187.222 () {60 vars in 1260 bytes} [Mon Nov 25 16:34:45 2019] POST /api2/admin/login/?next=/api2/admin/ => generated 1980 bytes in 162 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 18/19] 119.80.187.222 () {60 vars in 1260 bytes} [Mon Nov 25 16:34:55 2019] POST /api2/admin/login/?next=/api2/admin/ => generated 1975 bytes in 168 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 19/20] 119.80.187.222 () {60 vars in 1260 bytes} [Mon Nov 25 16:34:58 2019] POST /api2/admin/login/?next=/api2/admin/ => generated 27 bytes in 188 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 8977|app: 0|req: 2/21] 119.80.187.222 () {50 vars in 951 bytes} [Mon Nov 25 16:35:05 2019] GET /api2/admin/login/ => generated 1826 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 20/22] 119.80.187.222 () {52 vars in 982 bytes} [Mon Nov 25 16:38:51 2019] GET /api2/admin/login/ => generated 1826 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 21/23] 119.80.187.222 () {60 vars in 1207 bytes} [Mon Nov 25 16:38:55 2019] POST /api2/admin/login/ => generated 27 bytes in 189 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 22/24] 119.80.187.222 () {50 vars in 951 bytes} [Mon Nov 25 16:38:57 2019] GET /api2/admin/login/ => generated 1826 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
