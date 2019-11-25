@@ -37,19 +37,31 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',  # 跨域
     'blog',
     'rest_framework'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # 跨域
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+CORS_ORIGIN_ALLOW_ALL = True #接收所有跨域来源
+CORS_ORIGIN_WHITELIST = (
+    'google.com',
+    'hostname.example.com',
+    'localhost:8080',
+    '127.0.0.1:9000'
+)
+
 
 ROOT_URLCONF = 'server.urls'
 
