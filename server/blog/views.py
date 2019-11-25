@@ -67,6 +67,10 @@ class CreateArticle(APIView):
 
 
 class ArticleList(APIView):
+
+    def get(self, request):
+        return self.post(request)
+
     """
     文章列表
     """
@@ -91,6 +95,10 @@ class ArticleList(APIView):
             return my_response(code=-1, msg=err.default_detail)
 
 class CategoryList(APIView):
+
+    def get(self, request):
+        return self.post(request)
+
     """
     获取文章分类
     """
