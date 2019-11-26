@@ -154,9 +154,9 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static2/'
+STATIC_URL = '/static/'
 
-STATIC_ROOT = '/root/site/xiao2Blog/server/static'
+STATIC_ROOT = os.path.join(BASE_DIR, "static") if BASE_DIR.find('Coder') == -1 else '/root/site/xiao2Blog/server/static'
 
 
 BASE_LOG_DIR = os.path.join(BASE_DIR, "log")

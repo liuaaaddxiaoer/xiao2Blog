@@ -13,10 +13,7 @@
         </div>
         <div class="tag_container">
           <ul>
-            <li class="active">首页</li>
-            <li>归档</li>
-            <li>分类</li>
-            <li>关于我</li>
+            <li v-for="(item, index) in navs" :key="index" @click="clickNav(index)">{{item}}</li>
           </ul>
         </div>
       </div>
@@ -32,11 +29,11 @@
         <!--文章/分类-->
         <div class="articles_container">
           <div class="ar_item_container">
-            <p class="ar_item_container_count">88</p>
+            <p class="ar_item_container_count">{{count.articleCount || 0}}</p>
             <div class="ar_item_container_category">文章</div>
           </div>
           <div class="ar_item_container">
-            <p class="ar_item_container_tag_count">5</p>
+            <p class="ar_item_container_tag_count">{{count.categoryCount || 0}}</p>
             <div class="ar_item_container_tag_category">分类</div>
           </div>
         </div>
@@ -44,8 +41,8 @@
         <!--github-->
         <div class="third_container">
           <ul>
-            <li class="iconfont icon-github"></li>
-            <li></li>
+            <li class="iconfont icon-github"><a href="https://github.com/liuaaaddxiaoer" target="_blank"/></li>
+            <!--<li></li>-->
           </ul>
         </div>
       </div>
@@ -57,6 +54,19 @@
 <script>
 export default {
   name: 'App',
+
+  data() {
+    return {
+      navs: ['首页', '归档', '分类', '关于我'],
+      count: {}
+    }
+  },
+
+  created() {
+    // 获取文章/分类数量
+    this.fetchArticleCount()
+  },
+
   mounted() {
 
     // 吸顶
@@ -91,8 +101,23 @@ export default {
         }
 
       })
-    }
+    },
 
+    // 点击右侧导航区域
+    clickNav(index) {
+      if (index == 0) {
+        this.$router.push('/')
+      }
+    },
+
+    // 获取文章/分类数量
+    fetchArticleCount() {
+      this.$http.articleCount().then(res => {
+        if (res.code == 0) {
+          this.count = res.data
+        }
+      })
+    },
   },
 
 
@@ -138,7 +163,9 @@ export default {
 
 #app {
   position: relative;
-  font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;;
+  font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji",
+  "Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",
+  "Helvetica Neue",Helvetica,Arial,sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -260,9 +287,16 @@ export default {
         display: flex;
         justify-content: center;
 
-       li:hover {
-         color: black;
-         cursor: pointer;
+       li {
+         position: relative;
+         a {
+           position: absolute;
+           display: block;
+           left: -15px;
+           top: -15px;
+           width: 50px;
+           height: 50px
+         }
        }
       }
 

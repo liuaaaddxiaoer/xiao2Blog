@@ -108,5 +108,19 @@ class CategoryList(APIView):
         serias = CategorySerializer(categorys, many=True)
         print(serias.data)
 
-        return Response(serias.data)
+        return my_response(serias.data)
 
+class CategoryCount(APIView):
+
+    def get(self, request):
+        return self.post(request)
+
+    def post(self, request):
+
+        ar_count = Article.objects.all().count()
+        ca_count = Category.objects.all().count()
+
+        return my_response({
+            'articleCount': ar_count,
+            'categoryCount': ca_count
+        })
