@@ -6,8 +6,13 @@ import router from './router'
 
 import {Message} from 'element-ui'
 
+import http from './http/api'
+import utils from './utils'
 
-Vue.prototype.$message = Message;
+Vue.prototype.$message = Message
+
+Vue.prototype.$http = http
+Vue.prototype.$utils = utils
 
 
 Vue.config.productionTip = true

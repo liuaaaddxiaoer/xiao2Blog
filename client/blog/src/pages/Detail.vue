@@ -2,7 +2,7 @@
   <div class="detail_container">
     <div class="detail_inner">
       <TitleHeader class="title"/>
-      <Article />
+      <Article :content="article.content"/>
       <div class="reference_container">
         <h3>参考</h3>
         <ul>
@@ -32,6 +32,17 @@
   import TitleHeader from '../components/TitleHeader'
     export default {
       name: "Detail",
+
+      data() {
+        return {
+          article: {}
+        }
+      },
+
+      created() {
+        this.article = JSON.parse(this.$utils.get('article'))
+      },
+
       components: {
         Article,
         TitleHeader
@@ -50,7 +61,7 @@
       display: flex;
       flex-direction: column;
       padding: 40px 2.2em;
-      animation: _opacity_size 2s linear 0s 1;
+      animation: _opacity_size .5s linear 0s 1;
       .title {
         padding-top: 10px;
         padding-bottom: 50px;

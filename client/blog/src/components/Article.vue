@@ -15,6 +15,10 @@
   export default {
     name: "demo",
 
+    props: {
+      content: String
+    },
+
     data() {
       return {
         codes: [],
@@ -38,7 +42,7 @@
         linkify: true,        // Autoconvert URL-like text to links
 
         // Enable some language-neutral replacement + quotes beautification
-        typographer: true,
+        typographer: false,
 
         // Double + single quotes replacement pairs, when typographer enabled,
         // and smartquotes on. Could be either a String or an Array.
@@ -53,10 +57,8 @@
           let index = this.copyIndex - 1;
 
 
-
-
           if (lang && hljs.getLanguage(lang)) {
-
+            console.log(str, 'lan is ---', lang)
             this.codes.push(str)
 
             try {
@@ -83,52 +85,7 @@
       })
 
 
-      let result = md.render('# [Nextcloud](https://nextcloud.com)  iOS app [![Releases](https://img.shields.io/github/release/nextcloud/ios.svg)](https://github.com/nextcloud/ios/releases/latest)\n' +
-        '\n' +
-        '[<img src="Animation.gif"\n' +
-        'alt="Download from App Store"\n' +
-        'height="400">](https://itunes.apple.com/us/app/nextcloud/id1125420102?mt=8)\n' +
-        '\n' +
-        '[![irc](https://img.shields.io/badge/IRC-%23nextcloud--mobile%20on%20freenode-blue.svg)](https://webchat.freenode.net/?channels=nextcloud-mobile)\n' +
-        '\n' +
-        'Check out https://nextcloud.com and follow us on [twitter.com/nextclouders](https://twitter.com/nextclouders) or [twitter.com/NextcloudiOS](https://twitter.com/NextcloudiOS)\n' +
-        '\n' +
-        '## How to contribute\n' +
-        'If you want to [contribute](https://nextcloud.com/contribute/) to Nextcloud, you are very welcome:\n' +
-        '\n' +
-        '- on our IRC channels [![irc](https://img.shields.io/badge/IRC-%23nextcloud%20on%20freenode-orange.svg)](https://webchat.freenode.net/?channels=nextcloud) and [![irc](https://img.shields.io/badge/IRC-%23nextcloud--mobile%20on%20freenode-blue.svg)](https://webchat.freenode.net/?channels=nextcloud-mobile) on freenode\n' +
-        '- our forum at https://help.nextcloud.com/c/clients/ios\n' +
-        '- for translations of the app on [Transifex](https://www.transifex.com/nextcloud/nextcloud/dashboard/)\n' +
-        '- opening issues and PRs (including a corresponding issue)\n' +
-        '\n' +
-        '## Contribution Guidelines & License\n' +
-        '\n' +
-        '[GPLv3](LICENSE.txt) with [Apple app store exception](COPYING.iOS).\n' +
-        '\n' +
-        'Nextcloud doesn\'t require a CLA (Contributor License Agreement). The copyright belongs to all the individual contributors. Therefore we recommend that every contributor adds following line to the header of a file, if they changed it substantially:\n' +
-        '\n' +
-        '```\n' +
-        '@copyright Copyright (c) <year>, <your name> (<your email address>)\n' +
-        '```\n' +
-        '\n' +
-        'Please read the [Code of Conduct](https://nextcloud.com/code-of-conduct/). This document offers some guidance to ensure Nextcloud participants can cooperate effectively in a positive and inspiring atmosphere, and to explain how together we can strengthen and support each other.\n' +
-        '\n' +
-        'More information how to contribute: [https://nextcloud.com/contribute/](https://nextcloud.com/contribute/)\n' +
-        '\n' +
-        '## Start contributing\n' +
-        'Fork this repository and contribute back using pull requests to the master branch!\n' +
-        '\n' +
-        'Easy starting points are also reviewing [pull requests](https://github.com/nextcloud/ios/pulls) and working on [starter issues](https://github.com/nextcloud/ios/issues?q=is%3Aopen+is%3Aissue+label%3A%22starter+issue%22).\n' +
-        '\n' +
-        '## Support\n' +
-        '\n' +
-        'If you need assistance or want to ask a question about the iOS app, you are welcome to [ask for support](https://help.nextcloud.com/c/clients/ios) in our forums or the [IRC-Channel](https://webchat.freenode.net/?channels=nextcloud-mobile). If you have found a bug, feel free to [open a new Issue on GitHub](https://github.com/nextcloud/ios/issues). Keep in mind, that this repository only manages the iOS app. If you find bugs or have problems with the server/backend, you should ask the [Nextcloud server team](https://github.com/nextcloud/server) for help!\n' +
-        '\n' +
-        '## TestFlight \n' +
-        '\n' +
-        'Do you want try the last version in development of Nextcloud iOS ? Simple, follow this simple step\n' +
-        '\n' +
-        '[Apple TestFlight](https://testflight.apple.com/join/GjNbfo2a)\n')
+      let result = md.render(this.content)
 
       let refOk = this.$refs.article
       refOk.innerHTML = result
@@ -331,6 +288,10 @@
       border-spacing: 0;
       border-collapse: collapse;
 
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8;
     }
 
     th {

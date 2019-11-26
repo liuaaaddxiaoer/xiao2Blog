@@ -4,22 +4,20 @@
         <div class="section">
           <div class="section_inner">
             <div class="header_container">
-              <h3>使用 Xcode 检测代码覆盖率</h3>
+              <h3>{{item.title}}</h3>
               <div class="header_item_container">
                 <div class="item_container">
                   <i class="iconfont icon-rili" />
-                  <span>发表于 2019-04-02</span>
+                  <span>发表于 {{item.created_time}}</span>
                 </div>
                 <div class="item_container">
                   <i class="iconfont icon-wendang"/>
-                  <span>分类 <b>iOS 知识小集</b></span>
+                  <span>分类 <b>{{item.category}}</b></span>
                 </div>
               </div>
             </div>
-            <img src="https://file.kangzubin.com/blog/static/20190219/0.jpeg" alt="" v-if="index % 2 ? true : false">
-            <p>“代码覆盖率”是软件测试中的一种度量，用于描述工程中源代码被测试到的比例和程度。
-
-              在做单元测试时，代码覆盖率经常被拿来作为衡量测试质量好坏的指标，同时也能在一定程度上检测出工程中的冗余代码。</p>
+            <img :src="item.url" alt="" v-if="item.url && (item.url.startsWith('http') || item.url.startsWith('https'))">
+            <p>{{item.desc}}</p>
             <button @click="goToDetail(index)">阅读全文>></button>
           </div>
         </div>
@@ -28,7 +26,7 @@
 </template>
 
 <script>
-
+  import qs from 'QS'
     export default {
       name: "Home",
       data() {
@@ -36,12 +34,23 @@
           articles: [1, 2, 3, 4]
         }
       },
-
       components: {
       },
+
+      created() {
+        this.$http.articleList().then(res => {
+          if (res.code == 0) {
+            this.articles = res.data
+          }
+        })
+      },
+
       methods: {
         goToDetail(index) {
-          this.$router.push('detail')
+          console.log(this.articles[index])
+          this.$utils.set('article', JSON.stringify(this.articles[index]))
+
+          this.$router.push('detail?a=1')
         }
       }
 
