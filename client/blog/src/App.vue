@@ -32,7 +32,7 @@
             <p class="ar_item_container_count">{{count.articleCount || 0}}</p>
             <div class="ar_item_container_category">文章</div>
           </div>
-          <div class="ar_item_container">
+          <div class="ar_item_container" @click="categoryClick">
             <p class="ar_item_container_tag_count">{{count.categoryCount || 0}}</p>
             <div class="ar_item_container_tag_category">分类</div>
           </div>
@@ -74,6 +74,12 @@ export default {
   },
 
   methods: {
+
+    // 点击分类
+    categoryClick() {
+      this.$router.push('/categories')
+    },
+
     // 吸顶
     stickAvatarInfoModule: () =>{
       let nav_top = document.querySelector('.nav_top')
@@ -105,14 +111,19 @@ export default {
 
     // 点击右侧导航区域
     clickNav(index) {
+      // 首页
       if (index == 0) {
         this.$router.push('/')
+      } else if (index == 1) {
+        // 归档
+        this.$router.push('/archives')
       }
     },
 
     // 获取文章/分类数量
     fetchArticleCount() {
       this.$http.articleCount().then(res => {
+
         if (res.code == 0) {
           this.count = res.data
         }
@@ -175,9 +186,11 @@ export default {
 
   height: 100%;
   margin: 0 auto;
+  align-items: flex-start;
 
   .body_container {
     flex: 1;
+    height: auto;
   }
 
   /*右侧导航*/
@@ -263,6 +276,7 @@ export default {
         padding: 20px 0;
         .ar_item_container {
           display: flex;
+          cursor: pointer;
           flex-direction: column;
           color: #262a30;
           p {

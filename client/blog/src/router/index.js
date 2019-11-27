@@ -5,6 +5,10 @@ var Home = () => import('@/pages/Home')
 
 var Detail = () => import('@/pages/Detail')
 
+var Category = () => import('@/pages/Categories')
+
+var Archives = () => import('@/pages/Archives')
+
 Vue.use(Router)
 
 export default new Router({
@@ -21,10 +25,22 @@ export default new Router({
       name: 'Detail',
       component: Detail
     },
+
+    {
+      path: '/categories',
+      name: 'Categories',
+      component: Category
+    },
+
+    {
+      path: '/archives',
+      name: 'Archives',
+      component: Archives
+    },
   ],
 
   scrollBehavior(to, from, position) {
-    return {x:0, y: 1}
+    return {x:0, y: position}
   }
 
 })
