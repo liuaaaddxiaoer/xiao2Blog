@@ -597,3 +597,16 @@ Python auto-reloader enabled
 [pid: 8976|app: 0|req: 20/22] 119.80.187.222 () {52 vars in 982 bytes} [Mon Nov 25 16:38:51 2019] GET /api2/admin/login/ => generated 1826 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
 [pid: 8976|app: 0|req: 21/23] 119.80.187.222 () {60 vars in 1207 bytes} [Mon Nov 25 16:38:55 2019] POST /api2/admin/login/ => generated 27 bytes in 189 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
 [pid: 8976|app: 0|req: 22/24] 119.80.187.222 () {50 vars in 951 bytes} [Mon Nov 25 16:38:57 2019] GET /api2/admin/login/ => generated 1826 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Nov 27 09:41:31 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5) on 27 November 2019 01:34:34
+os: Darwin-18.6.0 Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64
+nodename: localhost
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/xiao2/Desktop/Coder/MyBlog/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /Users/xiao2/Desktop/Coder/MyBlog/server/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /root/site/xiao2Blog/server/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
