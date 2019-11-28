@@ -2,10 +2,11 @@
     <div class="archives_container">
       <div class="inner">
         <div class="section_list">
-          <h3 class="item title">目前共计88篇，Go</h3>
-          <h5 class="item year">2019</h5>
-          <li class="item">iOS <b>使用xcode检测</b></li>
-          <li class="item">Android</li>
+          <h3 class="item title">目前共计{{this.count}}篇，Go</h3>
+          <div class="year_container" v-for="(item, index) in items" :key="index">
+            <h5 class="item year">{{item.title}}</h5>
+            <li class="item" v-for="(article, index2) in item.articles" :key="index2">{{mytime(article.created_time)}} <b>{{article.title}}</b></li>
+          </div>
       </div>
       </div>
     </div>
@@ -13,7 +14,67 @@
 
 <script>
   export default {
-    name: "Archives"
+    name: "Archives",
+    data() {
+      return {
+        items: [],
+        count: 0,
+      }
+    },
+
+    created() {
+      this.$http.articleList({
+        order: 1
+      }).then(res => {
+
+        let data  = res.data
+
+
+        let nowYear = new Date().getFullYear()
+
+        let items = []
+
+        if (res.code == 0 && data.length > 0) {
+          this.count = data.length
+          nowYear = new Date(data[0].created_time).getFullYear()
+
+          let item = {}
+          item.articles = []
+
+          data.forEach((value) => {
+            let date = new Date(value.created_time).getFullYear()
+
+            if (nowYear == date) {
+
+            } else {
+              nowYear = date
+              item = {}
+              item.articles = []
+            }
+
+            item.title = date
+            item.articles.push(value)
+
+            if (item.articles.length > 0) {
+              if (items.indexOf(item) == -1) {
+                items.push(item)
+              }
+            }
+
+          })
+        }
+
+        this.items = items
+
+      })
+    },
+
+    methods: {
+      mytime(time) {
+        let date = new Date(time)
+        return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay()
+      }
+    },
   }
 </script>
 
@@ -28,6 +89,7 @@
     text-align: left;
     align-items: stretch;
     padding: 60px;
+    min-height: 582px;
     .boxShadow;
     .inner {
       border-left: 2px solid #f5f5f5;

@@ -28,7 +28,7 @@
 
         <!--文章/分类-->
         <div class="articles_container">
-          <div class="ar_item_container">
+          <div class="ar_item_container" @click="articleClick">
             <p class="ar_item_container_count">{{count.articleCount || 0}}</p>
             <div class="ar_item_container_category">文章</div>
           </div>
@@ -75,6 +75,11 @@ export default {
 
   methods: {
 
+    // 点击文章
+    articleClick() {
+      this.$router.push('/archives')
+    },
+
     // 点击分类
     categoryClick() {
       this.$router.push('/categories')
@@ -116,7 +121,10 @@ export default {
         this.$router.push('/')
       } else if (index == 1) {
         // 归档
-        this.$router.push('/archives')
+        this.articleClick()
+      } else if (index == 2) {
+        // 分类
+        this.categoryClick()
       }
     },
 
