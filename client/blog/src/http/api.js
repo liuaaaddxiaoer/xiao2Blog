@@ -16,6 +16,11 @@ export default {
 
   // 获取文章分类数量
   articleCount: (params = {}, config = {}) => {
-  return http.post(url.ARTICLE_COUNT, params, config);
-},
+    return http.post(url.ARTICLE_COUNT, params, config);
+  },
+
+  // 获取上下文章
+  nextArticle: (params = {}, config = {}) => {
+    return http.post(url.NEXT_ARTICLE, params, config);
+  },
 }

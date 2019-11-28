@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <transition name="fade">
-      <router-view class="body_container"/>
+      <router-view class="body_container" :key="$route.fullPath"/>
     </transition>
     <!--右侧导航区域-->
     <div class="nav">
@@ -101,7 +101,7 @@ export default {
         let appMarginT = parseFloat(window.getComputedStyle(app).marginTop)
         let appW = parseFloat(window.getComputedStyle(app).width)
 
-        if (top >= (nav_top.offsetHeight + mtF) && appW >= 1024) {
+        if (top >= (nav_top.offsetHeight + mtF) && appW >= 1100) {
           // alert(1)
           nav_bottom.style.position = 'fixed'
           nav_bottom.style.top = (-appMarginT).toString() + 'px'
@@ -157,16 +157,16 @@ export default {
   }
 
 
-  @media all and (min-width: 1024px){
+  @media all and (min-width: 1100px){
     #app {
-      width: 1024px;
+      width: 1100px;
       .nav {
         width: 200px;
       }
     }
   }
 
-  @media all and (max-width: 1024px){
+  @media all and (max-width: 1100px){
     #app {
       /*width: 100%;*/
       .nav {

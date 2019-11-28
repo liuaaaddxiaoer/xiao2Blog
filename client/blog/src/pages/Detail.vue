@@ -1,25 +1,21 @@
 <template>
   <div class="detail_container">
     <div class="detail_inner">
-      <TitleHeader class="title"/>
+      <TitleHeader class="title" :article="article"/>
       <Article :content="article.content"/>
-      <div class="reference_container">
+      <div class="reference_container" v-if="article.refs">
         <h3>参考</h3>
         <ul>
-          <li>https://www.baidu.com</li>
-          <li>https://www.baidu.com</li>
-          <li>https://www.baidu.com</li>
-          <li>https://www.baidu.com</li>
-          <li>https://www.baidu.com</li>
+          <li v-for="(item, index) in article.refs.split(',')">{{item}}</li>
         </ul>
       </div>
       <div class="nav_container">
-        <div class="nav_item_container">
+        <div class="nav_item_container" v-if="pre" @click="toggleArticle(0)">
           <i class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-"></i>
-          <span>硕大的多撒多</span>
+          <span>{{pre.title}}</span>
         </div>
-        <div class="nav_item_container">
-          <span>大萨达撒大大萨达多</span>
+        <div class="nav_item_container right" v-if="next" @click="toggleArticle(1)">
+          <span>{{next.title}}</span>
           <i class="iconfont icon-changyongtubiao-xianxingdaochu-zhuanqu-1"></i>
         </div>
       </div>
@@ -35,18 +31,41 @@
 
       data() {
         return {
-          article: {}
+          article: {},
+          pre: null,
+          next: null,
         }
       },
 
       created() {
         this.article = JSON.parse(this.$utils.get('article'))
+
+        // 获取上下文章
+        this.fetchData()
       },
 
       components: {
         Article,
         TitleHeader
-      }
+      },
+      methods: {
+        fetchData() {
+          this.$http.nextArticle({
+            id: this.article.id
+          }).then(res => {
+            if (res.code == 0) {
+              this.pre = res.data.pre
+              this.next = res.data.next
+            }
+          })
+        },
+
+        toggleArticle(type) {
+          let data = type == 0 ? this.pre : this.next
+          this.$utils.set('article', JSON.stringify(data))
+          this.$router.push(`${data.id}`)
+        },
+      },
     }
 </script>
 
@@ -99,8 +118,21 @@
 
       .nav_container {
         display: flex;
-        padding-top: 20px;
+        padding-top: 60px;
         justify-content: space-between;
+        position: relative;
+
+        .nav_item_container {
+          display: flex;
+          line-height: 2;
+          cursor: pointer;
+        }
+
+        .right {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
       }
     }
   }

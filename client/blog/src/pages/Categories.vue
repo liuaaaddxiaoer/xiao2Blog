@@ -37,7 +37,6 @@
       clickCategory(index) {
         this.$router.push({
           path: `archives/${this.categorys[index].name}`,
-
         })
       }
     },

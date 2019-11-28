@@ -11,5 +11,7 @@ export const CATEGORY_LIST = 'api/categoryList'
 
 export const ARTICLE_COUNT = 'api/articleCount'
 
+export const NEXT_ARTICLE = 'api/nextArticle'
+
 
 

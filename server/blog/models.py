@@ -36,6 +36,7 @@ class Article(models.Model):
     category = models.ForeignKey(Category, related_name='category', on_delete=models.DO_NOTHING, verbose_name='文章所属分类')
     tags = models.ManyToManyField(Tag, related_name='tags', verbose_name='文章标签', blank=True)
     is_delete = models.BooleanField(blank=False, default=False)
+    refs = models.TextField(blank=True, null=True, verbose_name='引用文章地址')
 
     def __str__(self):
         return self.title

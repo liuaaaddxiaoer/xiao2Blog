@@ -43,7 +43,7 @@
 
       articleClick(article) {
         this.$utils.set('article', JSON.stringify(article))
-        this.$router.push('/detail')
+        this.$router.push(`/detail/${article.id}`)
       },
 
       fetchData() {

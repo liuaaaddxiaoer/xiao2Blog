@@ -180,6 +180,8 @@
       max-height: 400px;
       margin: 0px 0;
       vertical-align: center;
+      max-width: 100%;
+      object-fit: cover;
     }
 
     img::selection {

@@ -3,19 +3,7 @@
       <section v-for="(item, index) in articles" :key="index">
         <div class="section">
           <div class="section_inner">
-            <div class="header_container">
-              <h3>{{item.title}}</h3>
-              <div class="header_item_container">
-                <div class="item_container">
-                  <i class="iconfont icon-rili" />
-                  <span>发表于 {{item.created_time}}</span>
-                </div>
-                <div class="item_container">
-                  <i class="iconfont icon-wendang"/>
-                  <span>分类 <b>{{item.category}}</b></span>
-                </div>
-              </div>
-            </div>
+            <TitleHeader class="title" :article="item"/>
             <img :src="item.url" alt="" v-if="item.url && (item.url.startsWith('http') || item.url.startsWith('https'))">
             <p>{{item.desc}}</p>
             <button @click="goToDetail(index)">阅读全文>></button>
@@ -26,15 +14,16 @@
 </template>
 
 <script>
-  import qs from 'QS'
+  import TitleHeader from '../components/TitleHeader'
     export default {
       name: "Home",
       data() {
         return {
-          articles: [1, 2, 3, 4]
+          articles: []
         }
       },
       components: {
+        TitleHeader
       },
 
       created() {
@@ -48,9 +37,10 @@
       methods: {
         goToDetail(index) {
           console.log(this.articles[index])
-          this.$utils.set('article', JSON.stringify(this.articles[index]))
+          let article = this.articles[index]
+          this.$utils.set('article', JSON.stringify(article))
 
-          this.$router.push('detail?a=1')
+          this.$router.push(`detail/${article.id}`)
         }
       }
 
@@ -73,33 +63,17 @@
       .boxShadow;
       .section {
         justify-content: center;
-        display: flex;
         .section_inner {
           opacity: 0;
           animation: _opacity_size 1.2s .35s;
           animation-fill-mode: forwards;
           display: flex;
           flex-direction: column;
-          .header_container {
-            display: flex;
-            flex-direction: column;
-            /*background: red;*/
-            .header_item_container {
-              justify-content: center;
-              display: flex;
-              .item_container {
-                align-items: center;
-                display: flex;
-                margin-left: 10px;
-                margin-top: 10px;
-                i {
-                  margin-right: 10px;
-                }
-              }
-            }
-          }
           img {
             width: 100%;
+            object-fit: fill;
+            max-height: 30em;
+            padding: 0 1em;
             margin-top: 40px;
           }
           p {

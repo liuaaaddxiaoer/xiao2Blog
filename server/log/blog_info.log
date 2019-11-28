@@ -2289,3 +2289,8 @@ TypeError: Object of type ArticleListSerializer is not JSON serializable
 [2019-11-28 15:55:20,009][MainThread:4483556800][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
 [2019-11-28 15:57:16,269][MainThread:4483556800][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
 [2019-11-28 15:57:16,841][MainThread:4456261056][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 19:48:02,606][MainThread:4526263744][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 19:48:48,184][MainThread:4537228736][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 19:50:28,252][MainThread:4595563968][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 19:56:46,959][MainThread:4595563968][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/liuxiaoer/Desktop/Coder/xiao2Blog/server/blog/models.py changed, reloading.]
+[2019-11-28 19:56:47,482][MainThread:4523621824][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
