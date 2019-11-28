@@ -181,7 +181,7 @@
       margin: 0px 0;
       vertical-align: center;
       max-width: 100%;
-      object-fit: cover;
+      object-fit: fill;
     }
 
     img::selection {
