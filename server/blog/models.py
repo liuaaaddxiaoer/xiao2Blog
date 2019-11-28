@@ -40,6 +40,9 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        ordering = ['id']
+
 class Test(models.Model):
     name = models.CharField(max_length=100, unique=True)
 

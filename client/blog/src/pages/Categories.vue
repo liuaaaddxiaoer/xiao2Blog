@@ -2,7 +2,7 @@
     <div class="category_container">
       <h3>目前共有{{categorys.length}}个分类</h3>
       <ul class="item_container">
-        <li v-for="(item, index) in categorys">
+        <li v-for="(item, index) in categorys" :key="index"  @click="clickCategory(index)">
           {{item.name}}
           <b>{{'(' + item.articles.length + ')'}}</b>
         </li>
@@ -15,16 +15,31 @@
     name: "Cateories",
     data() {
       return {
-        categorys: []
+        categorys: [],
       }
     },
 
     created() {
-      this.$http.categoryList().then(res => {
-        if (res.code == 0) {
-          this.categorys = res.data
-        }
-      })
+      this.fetchData()
+
+    },
+
+    methods: {
+
+      fetchData() {
+        this.$http.categoryList().then(res => {
+          if (res.code == 0) {
+            this.categorys = res.data
+          }
+        })
+      },
+
+      clickCategory(index) {
+        this.$router.push({
+          path: `archives/${this.categorys[index].name}`,
+
+        })
+      }
     },
   }
 </script>

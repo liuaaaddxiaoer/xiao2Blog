@@ -605,3 +605,1687 @@ django.db.utils.ProgrammingError: (1146, "Table 'blog2.django_session' doesn't e
 [2019-11-26 22:18:31,268][MainThread:4707597760][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
 [2019-11-26 22:26:38,912][MainThread:4707597760][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/liuxiaoer/Desktop/Coder/xiao2Blog/server/blog/views.py changed, reloading.]
 [2019-11-26 22:26:39,745][MainThread:4531285440][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:05:10,488][MainThread:4640224704][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:16:57,102][Thread-3:123145438535680][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/css/bootstrap.min.css]
+[2019-11-28 09:16:57,188][Thread-3:123145438535680][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/css/bootstrap-tweaks.css]
+[2019-11-28 09:16:57,203][Thread-5:123145449046016][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/css/default.css]
+[2019-11-28 09:16:57,209][Thread-4:123145443790848][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/css/prettify.css]
+[2019-11-28 09:16:57,346][Thread-4:123145443790848][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/jquery-3.4.1.min.js]
+[2019-11-28 09:16:57,348][Thread-3:123145438535680][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/csrf.js]
+[2019-11-28 09:16:57,350][Thread-5:123145449046016][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/ajax-form.js]
+[2019-11-28 09:16:57,355][Thread-6:123145454301184][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/bootstrap.min.js]
+[2019-11-28 09:16:57,362][Thread-7:123145459556352][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/prettify-min.js]
+[2019-11-28 09:16:57,368][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/default.js]
+[2019-11-28 09:16:57,535][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/ajax-form.js]
+[2019-11-28 09:16:57,549][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/csrf.js]
+[2019-11-28 09:16:57,571][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/bootstrap.min.js]
+[2019-11-28 09:16:57,582][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/prettify-min.js]
+[2019-11-28 09:16:57,596][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /static/rest_framework/js/default.js]
+[2019-11-28 09:16:57,726][Thread-8:123145464811520][task_id:django.request][log.py:228][WARNING][Not Found: /favicon.ico]
+[2019-11-28 09:21:09,489][MainThread:4640224704][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:21:11,704][MainThread:4812137920][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:21:31,460][MainThread:4812137920][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:21:33,572][MainThread:4795360704][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:22:35,061][MainThread:4795360704][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:22:35,694][MainThread:4590613952][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:22:43,482][Thread-1:123145503248384][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 80, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:22:55,207][MainThread:4590613952][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:22:55,987][MainThread:4568544704][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:22:57,189][Thread-1:123145422577664][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 80, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:23:33,500][MainThread:4568544704][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/server/settings.py changed, reloading.]
+[2019-11-28 09:23:34,348][MainThread:4410521024][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:23:53,825][MainThread:4574438848][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:25:47,816][MainThread:4574438848][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/backends/mysql/operations.py changed, reloading.]
+[2019-11-28 09:25:48,321][MainThread:4623406528][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:26:00,672][MainThread:4623406528][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/backends/mysql/operations.py changed, reloading.]
+[2019-11-28 09:26:01,274][MainThread:4616959424][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:26:09,754][Thread-1:123145417011200][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 80, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:26:55,853][MainThread:4616959424][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:26:56,747][MainThread:4677027264][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:26:58,540][Thread-1:123145550061568][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 82, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:42:45,528][Thread-3:123145550061568][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 82, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:43:55,532][MainThread:4677027264][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:43:56,320][MainThread:4431480256][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:43:59,901][Thread-1:123145368936448][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 82, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:45:23,079][Thread-1:123145368936448][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 82, in post
+    post_data = json.loads(request.body)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2019-11-28 09:45:53,876][MainThread:4431480256][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:45:54,580][MainThread:4783687104][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:46:42,876][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:46:57,380][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:47:17,689][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:47:53,010][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:48:06,315][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:48:12,610][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:48:31,564][Thread-5:123145492398080][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 09:52:46,968][MainThread:4783687104][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:52:47,887][MainThread:4613998016][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:52:50,169][Thread-1:123145545912320][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(request.body)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/http/request.py", line 281, in body
+    raise RawPostDataException("You cannot access body after reading from request's data stream")
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+[2019-11-28 09:53:13,053][Thread-1:123145545912320][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(request.body)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/http/request.py", line 281, in body
+    raise RawPostDataException("You cannot access body after reading from request's data stream")
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+[2019-11-28 09:53:49,373][Thread-1:123145545912320][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(request.body)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/http/request.py", line 281, in body
+    raise RawPostDataException("You cannot access body after reading from request's data stream")
+django.http.request.RawPostDataException: You cannot access body after reading from request's data stream
+[2019-11-28 09:53:52,877][MainThread:4613998016][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:53:53,789][MainThread:4716672448][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:55:23,721][MainThread:4716672448][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:55:24,471][MainThread:4667102656][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 09:57:48,180][MainThread:4667102656][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 09:57:49,048][MainThread:4614350272][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:00:24,917][Thread-2:123145572577280][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 10:01:31,756][Thread-3:123145567322112][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/articleList]
+[2019-11-28 10:02:20,948][MainThread:4614350272][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:02:21,900][MainThread:4457682368][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:02:51,740][MainThread:4457682368][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:02:52,576][MainThread:4595574208][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:03:39,512][MainThread:4595574208][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:03:40,119][MainThread:4620260800][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:03:51,904][Thread-1:123145449971712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(json.loads(request.data))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+[2019-11-28 10:03:59,260][Thread-1:123145449971712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(json.loads(request.data))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+[2019-11-28 10:04:00,546][Thread-1:123145449971712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(json.loads(request.data))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+[2019-11-28 10:04:01,756][Thread-1:123145449971712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(json.loads(request.data))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+[2019-11-28 10:04:18,440][Thread-1:123145449971712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(json.loads(request.data))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+[2019-11-28 10:05:17,575][Thread-1:123145449971712][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 73, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 84, in post
+    print(json.loads(request.data))
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+[2019-11-28 10:05:31,900][MainThread:4620260800][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:05:32,675][MainThread:4550354368][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:06:31,040][MainThread:4550354368][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:06:31,694][MainThread:4642244032][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:07:32,060][MainThread:4642244032][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:07:32,732][MainThread:4617631168][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:09:06,541][MainThread:4617631168][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:09:07,428][MainThread:4690810304][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:10:06,455][Thread-1:123145320808448][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 82, in post
+    if isinstance(post_data, str) and len(str) > 0:
+TypeError: object of type 'type' has no len()
+[2019-11-28 10:10:21,779][MainThread:4690810304][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:10:22,423][MainThread:4569597376][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:10:54,185][MainThread:4569597376][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:10:54,756][MainThread:4711540160][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:12:40,462][MainThread:4711540160][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/models.py changed, reloading.]
+[2019-11-28 10:12:41,010][MainThread:4640667072][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:12:45,361][MainThread:4640667072][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/models.py changed, reloading.]
+[2019-11-28 10:12:45,942][MainThread:4694009280][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:12:50,371][MainThread:4694009280][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/models.py changed, reloading.]
+[2019-11-28 10:12:50,821][MainThread:4620928448][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:14:28,249][MainThread:4620928448][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:14:28,823][MainThread:4485703104][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:14:58,472][MainThread:4485703104][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:14:59,113][MainThread:4440421824][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:15:27,660][Thread-2:123145350393856][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 94, in post
+    category = post_data.get('category', None)
+AttributeError: 'int' object has no attribute 'get'
+[2019-11-28 10:16:27,575][MainThread:4440421824][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:16:28,179][MainThread:4566820288][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:16:30,638][MainThread:4566820288][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:16:31,126][MainThread:4500428224][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:16:35,741][Thread-6:123145464815616][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 97, in post
+    category = post_data.get('category', None)
+AttributeError: 'int' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 111, in post
+    return my_response(code=-1, msg=err.default_detail)
+AttributeError: 'AttributeError' object has no attribute 'default_detail'
+[2019-11-28 10:16:48,287][MainThread:4500428224][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:16:48,750][MainThread:4534662592][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:16:52,014][Thread-3:123145427558400][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 10:17:10,286][MainThread:4534662592][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:17:10,899][MainThread:4554483136][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:17:13,975][Thread-1:123145400762368][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 10:17:33,786][Thread-3:123145411272704][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 10:17:42,630][Thread-7:123145400762368][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 10:20:58,049][Thread-9:123145400762368][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 10:23:49,192][MainThread:4554483136][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:23:49,885][MainThread:4613936576][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:25:21,188][MainThread:4613936576][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:25:21,937][MainThread:4566783424][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:25:28,402][Thread-1:123145373249536][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 10:35:30,012][MainThread:4566783424][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:35:30,692][MainThread:4749899200][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:37:36,994][MainThread:4749899200][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:37:37,583][MainThread:4522366400][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:37:42,866][Thread-1:123145524813824][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type TypeError is not JSON serializable
+[2019-11-28 10:38:18,043][MainThread:4522366400][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:38:19,236][MainThread:4680947136][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:38:32,382][MainThread:4680947136][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:38:33,234][MainThread:4496872896][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:38:59,107][MainThread:4496872896][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:38:59,511][MainThread:4592047552][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:41:59,526][MainThread:4592047552][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:42:00,225][MainThread:4507788736][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:42:41,580][MainThread:4507788736][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:42:42,170][MainThread:4589221312][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:46:18,790][MainThread:4589221312][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:46:19,433][MainThread:4658234816][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:46:25,225][MainThread:4658234816][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:46:25,670][MainThread:4509464000][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:46:32,512][MainThread:4509464000][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:46:33,151][MainThread:4345550272][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:46:42,138][MainThread:4345550272][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:46:42,549][MainThread:4451689920][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:48:25,566][MainThread:4451689920][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:48:25,997][MainThread:4415075776][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:48:35,660][Thread-1:123145326362624][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FieldError is not JSON serializable
+[2019-11-28 10:49:08,567][MainThread:4415075776][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:49:09,126][MainThread:4547433920][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:49:12,298][Thread-1:123145387642880][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FieldError is not JSON serializable
+[2019-11-28 10:49:35,668][MainThread:4547433920][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:49:36,286][MainThread:4686607808][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:50:41,482][MainThread:4686607808][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:50:42,143][MainThread:4560213440][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 10:50:54,431][MainThread:4560213440][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 10:50:55,031][MainThread:4575012288][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:38:05,023][MainThread:4575012288][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/urls.py changed, reloading.]
+[2019-11-28 14:38:05,763][MainThread:4604130752][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:43:55,366][MainThread:4604130752][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:43:56,029][MainThread:4703270336][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:44:56,529][Thread-1:123145370976256][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 173, in post
+    next = Article.objects.filter(pk_gt=id).first()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1420, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'pk_gt' into field. Choices are: category, category_id, content, created_time, desc, id, is_delete, modify_time, tags, title, url
+[2019-11-28 14:46:02,194][MainThread:4703270336][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:46:03,180][MainThread:4402517440][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:46:12,808][Thread-1:123145547870208][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 173, in post
+    next = Article.objects.filter(id_gt=id).first()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1420, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'id_gt' into field. Choices are: category, category_id, content, created_time, desc, id, is_delete, modify_time, tags, title, url
+[2019-11-28 14:47:06,563][MainThread:4402517440][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:47:07,473][MainThread:4742788544][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:47:15,608][Thread-1:123145412370432][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 376, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not Article
+[2019-11-28 14:48:08,832][MainThread:4742788544][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:48:09,465][MainThread:4492191168][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:49:29,809][MainThread:4492191168][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:49:30,456][MainThread:4419913152][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:50:22,683][MainThread:4419913152][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:50:23,402][MainThread:4525032896][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:51:22,271][MainThread:4525032896][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:51:22,907][MainThread:4578190784][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:51:34,644][MainThread:4535489984][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:51:57,671][MainThread:4535489984][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:51:58,437][MainThread:4603225536][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:52:17,789][MainThread:4603225536][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:52:18,362][MainThread:4468458944][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:53:05,219][MainThread:4468458944][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:53:05,871][MainThread:4643767744][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:53:49,790][MainThread:4643767744][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:53:50,416][MainThread:4538377664][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:53:55,136][MainThread:4538377664][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:53:55,595][MainThread:4654298560][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:53:58,071][MainThread:4654298560][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:53:58,541][MainThread:4616586688][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:54:19,344][MainThread:4616586688][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:54:19,863][MainThread:4364973504][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:54:34,216][MainThread:4364973504][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:54:34,810][MainThread:4448679360][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:54:36,287][Thread-1:123145553866752][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:54:52,464][Thread-1:123145553866752][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:55:04,233][MainThread:4448679360][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:55:04,885][MainThread:4752242112][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:55:29,951][MainThread:4752242112][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:55:30,544][MainThread:4547163584][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:55:31,961][Thread-1:123145346183168][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:55:41,769][MainThread:4547163584][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:55:42,665][MainThread:4531635648][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:57:13,832][MainThread:4531635648][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:57:14,646][MainThread:4582188480][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:57:44,316][MainThread:4582188480][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:57:44,731][MainThread:4524971456][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:57:46,330][Thread-1:123145511714816][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:58:10,947][Thread-1:123145511714816][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:58:20,303][Thread-1:123145511714816][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:58:41,121][Thread-1:123145511714816][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 14:59:48,256][MainThread:4524971456][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:59:48,985][MainThread:4488488384][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 14:59:51,441][MainThread:4488488384][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 14:59:52,212][MainThread:4693517760][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:01:03,856][MainThread:4693517760][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:01:04,426][MainThread:4473419200][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:01:10,166][MainThread:4473419200][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:01:10,885][MainThread:4561749440][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:01:13,339][MainThread:4561749440][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:01:13,773][MainThread:4402402752][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:01:42,367][MainThread:4402402752][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:01:42,987][MainThread:4588860864][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:01:49,884][MainThread:4588860864][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:01:50,552][MainThread:4403287488][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:04:05,578][MainThread:4403287488][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:04:06,268][MainThread:4619810240][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:04:33,678][MainThread:4619810240][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:04:34,272][MainThread:4446442944][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:06:13,988][MainThread:4446442944][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:06:14,639][MainThread:4423841216][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:07:42,248][MainThread:4423841216][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:07:42,923][MainThread:4512224704][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:07:54,163][Thread-1:123145484951552][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 15:08:34,796][Thread-1:123145484951552][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 15:09:13,048][MainThread:4512224704][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:09:13,777][MainThread:4631897536][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:09:18,836][Thread-1:123145473171456][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 15:09:46,726][MainThread:4631897536][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:09:47,351][MainThread:4361283008][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:10:00,793][MainThread:4361283008][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:10:01,420][MainThread:4565796288][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:10:35,621][MainThread:4565796288][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:10:36,391][MainThread:4688668096][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:12:03,703][MainThread:4688668096][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:12:04,414][MainThread:4688025024][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:12:08,064][MainThread:4688025024][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:12:08,513][MainThread:4490597824][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:12:54,309][MainThread:4490597824][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:12:54,713][MainThread:4542191040][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:13:05,960][MainThread:4542191040][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:13:06,387][MainThread:4510811584][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:13:07,833][Thread-1:123145573945344][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 15:20:33,505][Thread-2:123145573945344][task_id:django.request][log.py:228][WARNING][Bad Request: /api2/api/nextArticle]
+[2019-11-28 15:24:02,958][MainThread:4510811584][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:24:03,625][MainThread:4528801216][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:24:21,471][MainThread:4528801216][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:24:22,224][MainThread:4510971328][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:24:34,641][MainThread:4510971328][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:24:35,156][MainThread:4603884992][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:24:56,290][MainThread:4603884992][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:24:56,896][MainThread:4714448320][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:27:41,422][Thread-2:123145370505216][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 376, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not Article
+[2019-11-28 15:28:17,503][MainThread:4714448320][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:28:18,131][MainThread:4641002944][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:28:29,280][Thread-1:123145477464064][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Article is not JSON serializable
+[2019-11-28 15:32:17,024][MainThread:4641002944][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:32:17,612][MainThread:4714558912][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:32:25,591][MainThread:4714558912][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:32:26,179][MainThread:4398904768][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:32:43,156][Thread-2:123145405743104][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Article is not JSON serializable
+[2019-11-28 15:32:43,282][Thread-2:123145405743104][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 170, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 183, in post
+    id = body2.get('id', None)
+AttributeError: 'str' object has no attribute 'get'
+[2019-11-28 15:33:24,138][Thread-2:123145405743104][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 170, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 183, in post
+    id = body2.get('id', None)
+AttributeError: 'str' object has no attribute 'get'
+[2019-11-28 15:33:59,394][MainThread:4398904768][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:34:00,046][MainThread:4644189632][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:34:01,697][MainThread:4644189632][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:34:02,150][MainThread:4519101888][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:34:07,939][MainThread:4519101888][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:34:08,354][MainThread:4471219648][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:34:10,808][MainThread:4471219648][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:34:11,362][MainThread:4609312192][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:34:13,111][Thread-1:123145392742400][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 167, in get
+    return self.post(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py", line 180, in post
+    id = body2.get('id', None)
+AttributeError: 'str' object has no attribute 'get'
+[2019-11-28 15:34:15,345][Thread-1:123145392742400][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 15:34:43,015][Thread-1:123145392742400][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/articleList]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AttributeError is not JSON serializable
+[2019-11-28 15:34:53,349][MainThread:4609312192][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:34:54,024][MainThread:4419347904][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:43:06,985][MainThread:4419347904][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:43:07,744][MainThread:4491699648][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:43:47,099][MainThread:4491699648][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:43:47,703][MainThread:4565022144][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:43:59,899][MainThread:4565022144][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:44:00,527][MainThread:4560057792][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:44:19,922][Thread-1:123145482866688][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Article is not JSON serializable
+[2019-11-28 15:45:13,684][Thread-1:123145482866688][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Article is not JSON serializable
+[2019-11-28 15:46:15,399][MainThread:4560057792][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:46:16,145][MainThread:4694922688][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:47:34,930][MainThread:4694922688][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:47:35,557][MainThread:4751967680][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:48:43,784][MainThread:4434376128][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:48:55,984][MainThread:4434376128][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:48:56,449][MainThread:4560090560][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:49:03,547][Thread-1:123145555271680][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ArticleListSerializer is not JSON serializable
+[2019-11-28 15:49:27,188][MainThread:4560090560][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:49:27,632][MainThread:4610627008][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:49:34,013][Thread-1:123145384566784][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Article is not JSON serializable
+[2019-11-28 15:51:01,337][MainThread:4610627008][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:51:01,939][MainThread:4741592512][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:51:10,586][Thread-1:123145535352832][task_id:django.request][log.py:228][ERROR][Internal Server Error: /api2/api/nextArticle]
+Traceback (most recent call last):
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 725, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 681, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 414, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/Users/xiao2/Desktop/Coder/MyBlog/server/venv/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ArticleListSerializer is not JSON serializable
+[2019-11-28 15:51:27,488][MainThread:4741592512][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:51:28,074][MainThread:4689352128][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:52:24,628][MainThread:4689352128][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:52:25,258][MainThread:4765427136][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:52:48,321][MainThread:4765427136][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:52:49,020][MainThread:4642784704][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:53:17,517][MainThread:4642784704][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:53:18,113][MainThread:4437116352][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:54:08,375][MainThread:4437116352][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:54:09,114][MainThread:4731389376][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:54:53,282][MainThread:4731389376][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:54:53,990][MainThread:4376782272][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:55:19,588][MainThread:4376782272][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:55:20,009][MainThread:4483556800][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]
+[2019-11-28 15:57:16,269][MainThread:4483556800][task_id:django.utils.autoreload][autoreload.py:217][INFO][/Users/xiao2/Desktop/Coder/MyBlog/server/blog/views.py changed, reloading.]
+[2019-11-28 15:57:16,841][MainThread:4456261056][task_id:django.utils.autoreload][autoreload.py:597][INFO][Watching for file changes with StatReloader]

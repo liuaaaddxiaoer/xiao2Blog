@@ -2,10 +2,10 @@
     <div class="archives_container">
       <div class="inner">
         <div class="section_list">
-          <h3 class="item title">目前共计{{this.count}}篇，Go</h3>
+          <h3 class="item title">{{title()}}</h3>
           <div class="year_container" v-for="(item, index) in items" :key="index">
             <h5 class="item year">{{item.title}}</h5>
-            <li class="item" v-for="(article, index2) in item.articles" :key="index2">{{mytime(article.created_time)}} <b>{{article.title}}</b></li>
+            <li class="item" v-for="(article, index2) in item.articles" :key="index2" @click="articleClick(article)">{{mytime(article.created_time)}} <b>{{article.title}}</b></li>
           </div>
       </div>
       </div>
@@ -19,57 +19,90 @@
       return {
         items: [],
         count: 0,
+        category: ''
       }
     },
 
     created() {
-      this.$http.articleList({
-        order: 1
-      }).then(res => {
 
-        let data  = res.data
+      this.categorys()
+
+      this.fetchData()
+    },
 
 
-        let nowYear = new Date().getFullYear()
+    watch: {
 
-        let items = []
-
-        if (res.code == 0 && data.length > 0) {
-          this.count = data.length
-          nowYear = new Date(data[0].created_time).getFullYear()
-
-          let item = {}
-          item.articles = []
-
-          data.forEach((value) => {
-            let date = new Date(value.created_time).getFullYear()
-
-            if (nowYear == date) {
-
-            } else {
-              nowYear = date
-              item = {}
-              item.articles = []
-            }
-
-            item.title = date
-            item.articles.push(value)
-
-            if (item.articles.length > 0) {
-              if (items.indexOf(item) == -1) {
-                items.push(item)
-              }
-            }
-
-          })
-        }
-
-        this.items = items
-
-      })
+      '$route'() {
+        this.categorys()
+        this.fetchData()
+      }
     },
 
     methods: {
+
+      articleClick(article) {
+        this.$utils.set('article', JSON.stringify(article))
+        this.$router.push('/detail')
+      },
+
+      fetchData() {
+        this.$http.articleList({
+          order: 1,
+          category: this.category || ''
+        }).then(res => {
+
+          let data  = res.data
+
+
+          let nowYear = new Date().getFullYear()
+
+          let items = []
+
+          if (res.code == 0 && data.length > 0) {
+            this.count = data.length
+            nowYear = new Date(data[0].created_time).getFullYear()
+
+            let item = {}
+            item.articles = []
+
+            data.forEach((value) => {
+              let date = new Date(value.created_time).getFullYear()
+
+              if (nowYear == date) {
+
+              } else {
+                nowYear = date
+                item = {}
+                item.articles = []
+              }
+
+              item.title = date
+              item.articles.push(value)
+
+              if (item.articles.length > 0) {
+                if (items.indexOf(item) == -1) {
+                  items.push(item)
+                }
+              }
+
+            })
+          }
+
+          this.items = items
+
+        })
+      },
+
+      title() {
+        return this.category ? this.category : '目前共有' + this.count + '篇'
+      },
+
+      categorys() {
+        let route = this.$route.params
+        this.category = route.category
+      },
+
       mytime(time) {
         let date = new Date(time)
         return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDay()
@@ -111,6 +144,7 @@
           border-bottom: 1px dashed #bbb;
           text-align: left;
           line-height: 2;
+          cursor: pointer;
         }
 
         .item.year {

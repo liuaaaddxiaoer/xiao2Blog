@@ -33,10 +33,18 @@ export default new Router({
     },
 
     {
-      path: '/archives',
+      path: '/archives/:category',
       name: 'Archives',
       component: Archives
     },
+
+    {
+      path: '/archives/',
+      name: 'Archives',
+      component: Archives
+    },
+
+
   ],
 
   scrollBehavior(to, from, position) {
