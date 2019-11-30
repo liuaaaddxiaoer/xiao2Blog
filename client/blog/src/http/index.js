@@ -1,6 +1,6 @@
 
 import axios from 'axios'
-import qs from 'QS'
+import qs from 'qs'
 import {BASE_URL} from './url'
 
 axios.defaults.headers = {
