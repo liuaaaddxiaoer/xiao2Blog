@@ -610,3 +610,43 @@ detected binary path: /Users/xiao2/Desktop/Coder/MyBlog/server/venv/bin/uwsgi
 !!! no internal routing support, rebuild with pcre support !!!
 chdir() to /root/site/xiao2Blog/server/
 chdir(): No such file or directory [core/uwsgi.c line 2623]
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Nov 29 10:36:27 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-28) on 25 November 2019 01:57:24
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/xiao2Blog/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/xiao2Blog/server/venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server/
+your processes number limit is 3895
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:3000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, Nov 25 2018, 21:43:00)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python main interpreter initialized at 0x25f7f20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218760 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x25f7f20 pid: 16460 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16460)
+spawned uWSGI worker 1 (pid: 16463, cores: 1)
+spawned uWSGI worker 2 (pid: 16464, cores: 1)
+*** Stats server enabled on ./uwsgi/uwsgi.status fd: 14 ***
+Python auto-reloader enabled
