@@ -1,7 +1,7 @@
 
 
 
-export const BASE_URL = process.env.NODE_ENV != 'production' ? 'http://127.0.0.1:8000/api2/' : 'https://www.liuxiaoer.club/api2/'
+export const BASE_URL = process.env.NODE_ENV != 'production' ? 'http://127.0.0.1:8000/api2/' : 'https://www.liuxiaoer.top/api2/'
 
 export const ARTICLE_LIST = 'api/articleList'
 
