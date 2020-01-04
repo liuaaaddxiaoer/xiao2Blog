@@ -111,7 +111,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog2',
         'USER': 'root',            # mysql的用户名
-        'PASSWORD': 'xiaoer22',         # mysql的密码
+        'PASSWORD': '',         # mysql的密码
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'CHARSET': 'utf8'
