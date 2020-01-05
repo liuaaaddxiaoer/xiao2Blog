@@ -1,16 +1,25 @@
 <template>
   <div id="app">
+    <Aplayer
+      autoplay
+      v-once
+      :music="{
+    title: 'secret base~君がくれたもの~',
+    artist: 'Silent Siren',
+    src: 'http://m8.music.126.net/20200105123439/2ce6362aebe763bf1a33d797224e4e67/ymusic/5359/0f5e/075a/d370955f4e849960557700479ce0b834.mp3',
+    }"
+      :float="true"
+      class="player"
+      :mini="false"
+    />
     <transition name="fade">
-      <router-view class="body_container" :key="$route.fullPath"/>
+      <router-view class="body_container" :key="$route.fullPath" />
     </transition>
     <!--右侧导航区域-->
     <div class="nav">
-
       <!--右侧导航顶部分类区域-->
       <div class="nav_top">
-        <div class="title_container">
-          xiao2
-        </div>
+        <div class="title_container">xiao2</div>
         <div class="tag_container">
           <ul>
             <li v-for="(item, index) in navs" :key="index" @click="clickNav(index)">{{item}}</li>
@@ -22,7 +31,12 @@
       <div class="nav_bottom">
         <!--头像-->
         <div class="avatar_container">
-          <img src="https://kangzubin.com/images/avatar.jpg" alt="">
+          <img
+            src="https://avatars0.githubusercontent.com/u/15266184?s=460&v=4"
+            width="120px"
+            height="120px"
+            alt
+          />
           <div class="name">xiao2</div>
         </div>
 
@@ -41,150 +55,155 @@
         <!--github-->
         <div class="third_container">
           <ul>
-            <li class="iconfont icon-github"><a href="https://github.com/liuaaaddxiaoer" target="_blank"/></li>
+            <li class="iconfont icon-github">
+              <a href="https://github.com/liuaaaddxiaoer" target="_blank" />
+            </li>
             <!--<li></li>-->
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
+import Aplayer from "vue-aplayer";
+
 export default {
-  name: 'App',
+  name: "App",
 
   data() {
     return {
-      navs: ['首页', '归档', '分类', '关于我'],
+      navs: ["首页", "归档", "分类", "关于我"],
       count: {}
-    }
+    };
   },
 
   created() {
+    // 进制打印
+    Aplayer.disableVersionBadge = true;
+
     // 获取文章/分类数量
-    this.fetchArticleCount()
+    this.fetchArticleCount();
+  },
+
+  components: {
+    Aplayer
   },
 
   mounted() {
-
     // 吸顶
-    this.stickAvatarInfoModule()
+    this.stickAvatarInfoModule();
   },
 
   methods: {
-
     // 点击文章
     articleClick() {
-      this.$router.push('/archives')
+      this.$router.push("/archives");
     },
 
     // 点击分类
     categoryClick() {
-      this.$router.push('/categories')
+      this.$router.push("/categories");
     },
 
     // 吸顶
-    stickAvatarInfoModule: () =>{
-      let nav_top = document.querySelector('.nav_top')
-      let nav_bottom = document.querySelector('.nav_bottom')
-      let app = document.querySelector('#app')
+    stickAvatarInfoModule: () => {
+      let nav_top = document.querySelector(".nav_top");
+      let nav_bottom = document.querySelector(".nav_bottom");
+      let app = document.querySelector("#app");
 
-      window.addEventListener('scroll', (e) => {
-        let top = window.pageYOffset || document.documentElement.scrollTop
+      window.addEventListener("scroll", e => {
+        let top = window.pageYOffset || document.documentElement.scrollTop;
 
-        let mt = window.getComputedStyle(nav_bottom).marginTop
-        let mtF = parseFloat(mt)
+        let mt = window.getComputedStyle(nav_bottom).marginTop;
+        let mtF = parseFloat(mt);
 
-        let appMarginR = parseFloat(window.getComputedStyle(app).marginRight)
-        let appMarginT = parseFloat(window.getComputedStyle(app).marginTop)
-        let appW = parseFloat(window.getComputedStyle(app).width)
+        let appMarginR = parseFloat(window.getComputedStyle(app).marginRight);
+        let appMarginT = parseFloat(window.getComputedStyle(app).marginTop);
+        let appW = parseFloat(window.getComputedStyle(app).width);
 
-        if (top >= (nav_top.offsetHeight + mtF) && appW >= 1100) {
+        if (top >= nav_top.offsetHeight + mtF && appW >= 1100) {
           // alert(1)
-          nav_bottom.style.position = 'fixed'
-          nav_bottom.style.top = (-appMarginT).toString() + 'px'
-          nav_bottom.style.right = appMarginR.toString() + 'px'
-          nav_bottom.style.width = (parseFloat(window.getComputedStyle(nav_top).width)).toString() + 'px'
+          nav_bottom.style.position = "fixed";
+          nav_bottom.style.top = (-appMarginT).toString() + "px";
+          nav_bottom.style.right = appMarginR.toString() + "px";
+          nav_bottom.style.width =
+            parseFloat(window.getComputedStyle(nav_top).width).toString() +
+            "px";
         } else {
-          nav_bottom.style.position = 'inherit'
+          nav_bottom.style.position = "inherit";
         }
-
-      })
+      });
     },
 
     // 点击右侧导航区域
     clickNav(index) {
       // 首页
       if (index == 0) {
-        this.$router.push('/')
+        this.$router.push("/");
       } else if (index == 1) {
         // 归档
-        this.articleClick()
+        this.articleClick();
       } else if (index == 2) {
         // 分类
-        this.categoryClick()
+        this.categoryClick();
       }
     },
 
     // 获取文章/分类数量
     fetchArticleCount() {
       this.$http.articleCount().then(res => {
-
         if (res.code == 0) {
-          this.count = res.data
+          this.count = res.data;
         }
-      })
-    },
-  },
-
-
-}
+      });
+    }
+  }
+};
 </script>
 
 <style lang="less">
-  @import "css/reset";
-  @import "css/common";
-  @import "assets/iconfont/iconfont.css";
+@import "css/reset";
+@import "css/common";
+@import "assets/iconfont/iconfont.css";
 
-  .fade-enter-active {
-    transition: opacity .3s;
-  }
+.fade-enter-active {
+  transition: opacity 0.3s;
+}
 
-  .fade-enter {
-    opacity: 0;
-  }
+.fade-enter {
+  opacity: 0;
+}
 
-
-  @media all and (min-width: 1100px){
-    #app {
-      width: 1100px;
-      .nav {
-        width: 200px;
-      }
+@media all and (min-width: 1100px) {
+  #app {
+    width: 1100px;
+    .nav {
+      width: 200px;
     }
   }
+}
 
-  @media all and (max-width: 1100px){
-    #app {
-      /*width: 100%;*/
-      .nav {
-        width: 0;
-        overflow: hidden;
-      }
-      .nav .nav_bottom {
-        width: 0;
-      }
+@media all and (max-width: 1100px) {
+  #app {
+    /*width: 100%;*/
+    .nav {
+      width: 0;
+      overflow: hidden;
+    }
+    .nav .nav_bottom {
+      width: 0;
     }
   }
-
+}
 
 #app {
   position: relative;
-  font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji",
-  "Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",
-  "Helvetica Neue",Helvetica,Arial,sans-serif;;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -195,6 +214,12 @@ export default {
   height: 100%;
   margin: 0 auto;
   align-items: flex-start;
+
+  .player {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+  }
 
   .body_container {
     flex: 1;
@@ -214,7 +239,7 @@ export default {
       .whiteColor;
       .boxShadow;
 
-      animation: _opacity_size .35s linear 0s 1;
+      animation: _opacity_size 0.35s linear 0s 1;
       /*标题*/
       .title_container {
         background: @mainColor;
@@ -257,7 +282,7 @@ export default {
     /*个人信息*/
     .nav_bottom {
       opacity: 0;
-      animation: opacity_size .5s linear 0.35s 1;
+      animation: opacity_size 0.5s linear 0.35s 1;
       animation-fill-mode: forwards;
       margin-top: 15px;
       padding: 20px;
@@ -296,7 +321,6 @@ export default {
             font-size: 13px;
           }
           margin-left: 10px;
-
         }
 
         .ar_item_container:last-child {
@@ -309,20 +333,18 @@ export default {
         display: flex;
         justify-content: center;
 
-       li {
-         position: relative;
-         a {
-           position: absolute;
-           display: block;
-           left: -15px;
-           top: -15px;
-           width: 50px;
-           height: 50px
-         }
-       }
+        li {
+          position: relative;
+          a {
+            position: absolute;
+            display: block;
+            left: -15px;
+            top: -15px;
+            width: 50px;
+            height: 50px;
+          }
+        }
       }
-
-
     }
   }
 }

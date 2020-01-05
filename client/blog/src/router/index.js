@@ -1,13 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-var Home = () => import('@/pages/Home')
+let Home = () => import('@/pages/Home')
 
-var Detail = () => import('@/pages/Detail')
+let Detail = () => import('@/pages/Detail')
 
-var Category = () => import('@/pages/Categories')
+let Category = () => import('@/pages/Categories')
 
-var Archives = () => import('@/pages/Archives')
+let Archives = () => import('@/pages/Archives')
+
+let Player = () => import('@/pages/Player')
 
 Vue.use(Router)
 
@@ -51,11 +53,16 @@ export default new Router({
       component: Archives
     },
 
+    {
+      path: '/player/',
+      name: 'Player',
+      component: Player
+    },
 
   ],
 
   scrollBehavior(to, from, position) {
-    return {x:0, y: position}
+    return { x: 0, y: position }
   }
 
 })
