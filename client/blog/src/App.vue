@@ -6,7 +6,7 @@
       :music="{
     title: 'secret base~君がくれたもの~',
     artist: 'Silent Siren',
-    src: 'http://m8.music.126.net/20200105123439/2ce6362aebe763bf1a33d797224e4e67/ymusic/5359/0f5e/075a/d370955f4e849960557700479ce0b834.mp3',
+    src: 'http://m8.music.126.net/20200106110328/a55697cf3f744a2d743067b3059b99e6/ymusic/5359/0f5e/075a/d370955f4e849960557700479ce0b834.mp3',
     }"
       :float="true"
       class="player"
