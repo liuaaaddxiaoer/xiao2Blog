@@ -4,12 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import {Message} from 'element-ui'
+import ElementUI from 'element-ui'
 
 import http from './http/api'
 import utils from './utils'
+Vue.use(ElementUI)
 
-Vue.prototype.$message = Message
+Vue.prototype.$message = ElementUI.Message
 
 Vue.prototype.$http = http
 Vue.prototype.$utils = utils
