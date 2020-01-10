@@ -13,6 +13,9 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+
+// const VueLoaderPlugin = require('vue-loader-plugin')
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -45,6 +48,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
+    // new VueLoaderPlugin(),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
@@ -56,13 +60,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true,
-      excludeChunks: ['tool'], 
+      excludeChunks: ['tool'],
     }),
 
     new HtmlWebpackPlugin({
       filename: 'tool.html',
       template: 'tool.html',
-      excludeChunks: ['app'], 
+      excludeChunks: ['app'],
       inject: true,
     }),
 

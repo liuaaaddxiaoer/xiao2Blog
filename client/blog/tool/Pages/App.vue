@@ -1,23 +1,20 @@
 <template>
   <el-container class="container">
-      <el-aside>
-        <HomeAside/>
-      </el-aside>
-      <el-main>
-          2
-      </el-main>
-    </el-container>
+    <el-aside>
+      <HomeAside />
+    </el-aside>
+    <el-main>
+      <router-view />
+    </el-main>
+  </el-container>
 </template>
 
 <script>
-
-import HomeAside from '../components/HomeAside'
+import HomeAside from "../components/HomeAside";
 
 export default {
   data() {
-    return {
-
-    }
+    return {};
   },
   components: {
     HomeAside
@@ -26,7 +23,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-  .container {
-    height: 100%;
-  }
+.container {
+  height: 100%;
+}
 </style>
