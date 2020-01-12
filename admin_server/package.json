@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apn": "^2.2.0",
+    "apn": "https://github.com/node-apn/node-apn.git",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"

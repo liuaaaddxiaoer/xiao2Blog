@@ -17,25 +17,43 @@
       <div class="p8_container" v-show="tokenType == 1">
         <div class="item_container">
           <span>Bundle ID</span>
-          <i class="el-icon-question"></i>
+          <el-popover placement="top-start" width="200" trigger="hover" content="应用程序包名">
+            <i slot="reference" class="el-icon-question"></i>
+          </el-popover>
+
           <el-input type="text" />
         </div>
 
         <div class="item_container">
           <span>Key ID:</span>
-          <i class="el-icon-question" />
+          <el-popover placement="top-start" width="200" trigger="hover" content="申请P8证书时候的Key">
+            <i slot="reference" class="el-icon-question"></i>
+          </el-popover>
           <el-input type="text" />
         </div>
 
         <div class="item_container">
           <span>Team ID:</span>
-          <i class="el-icon-question" />
+          <el-popover
+            placement="top-start"
+            trigger="hover"
+            content="个人或公司开发者账号的ID，登陆Apple development可查看"
+          >
+            <i slot="reference" class="el-icon-question"></i>
+          </el-popover>
           <el-input type="text" />
         </div>
 
         <div class="item_container">
-          <span>Auth key:</span>
-          <i class="el-icon-question" />
+          <span>P8证书</span>
+          <el-popover
+            placement="top-start"
+            trigger="hover"
+            width="300"
+            content="Token Authentication是APNs新推出的推送鉴权方式，生成的 Auth Key（文件扩展名为p8）不再有过期时间，且可以被开发者账户下多个app一起使用。"
+          >
+            <i slot="reference" class="el-icon-question"></i>
+          </el-popover>
           <!-- 上传组件 -->
           <el-upload class="upload-demo" drag action="https://jsonpla">
             <i class="el-icon-upload"></i>
@@ -60,7 +78,10 @@
 
         <div class="item_container">
           <span>Bundle ID</span>
-          <i class="el-icon-question"></i>
+          <el-popover placement="top-start" width="200" trigger="hover" content="应用程序包名">
+            <i slot="reference" class="el-icon-question"></i>
+          </el-popover>
+
           <el-input type="text" />
         </div>
 
