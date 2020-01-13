@@ -11,16 +11,16 @@ let token = {
 
 // apns cert
 let p12 = {
-  cert: path.resolve(__dirname, '../../static', 'apns-dev-cert.pem'),
-  key: path.resolve(__dirname, '../../static', 'apns-dev-key.pem'),
+  cert: path.resolve(__dirname, '../../static', 'apns_dev_cert.pem'),
+  key: path.resolve(__dirname, '../../static', 'apns_dev_key.pem'),
   passphrase: '111111',
 }
 
 
 // 设置privider
 const privider = new Apn.Provider({
-  token: token,
-  // ...p12,
+  // token: token,
+  ...p12,
   production: false,
 })
 
