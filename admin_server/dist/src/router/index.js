@@ -47,4 +47,11 @@ router.get('/', function (ctx) { return __awaiter(void 0, void 0, void 0, functi
         return [2 /*return*/];
     });
 }); });
+router.post('/upload', function (ctx, next) { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        console.log(ctx.request);
+        ctx.body = '111';
+        return [2 /*return*/];
+    });
+}); });
 exports.default = router;

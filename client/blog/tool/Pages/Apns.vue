@@ -21,7 +21,7 @@
             <i slot="reference" class="el-icon-question"></i>
           </el-popover>
 
-          <el-input type="text" />
+          <el-input type="text" v-model="bundleId"/>
         </div>
 
         <div class="item_container">
@@ -55,7 +55,12 @@
             <i slot="reference" class="el-icon-question"></i>
           </el-popover>
           <!-- 上传组件 -->
-          <el-upload class="upload-demo" drag action="https://jsonpla">
+          <el-upload class="upload-demo" 
+          drag 
+          action="http://localhost:30001/upload/" 
+          :data="extra"
+          :before-upload="before_upload"
+          >
             <i class="el-icon-upload"></i>
             <div class="el-upload__text">
               将文件拖到此处，或
@@ -82,7 +87,7 @@
             <i slot="reference" class="el-icon-question"></i>
           </el-popover>
 
-          <el-input type="text" />
+          <el-input type="text" v-model="bundleId"/>
         </div>
 
         <div class="item_container">
@@ -115,8 +120,32 @@ export default {
   data() {
     return {
       tokenType: "1", // 鉴权方式 1是tokenP8 2 是apns
-      mode: "1" // apns 1是dev 2是dis
+      mode: "2", // apns 1是dev 2是dis
+      bundleId: '', // app bundle id
     };
+  },
+  computed: {
+    extra() {
+      return {
+        id: this.bundleId
+      }
+    }
+  },
+  created() {
+    
+  },
+  methods: {
+    before_upload(file) {
+      console.log(file)
+      // bundle id 不可以为空
+      let id = this.bundleId
+      if (file.name.ends == 'p8' && id) {
+        return true
+      }  else {
+        return false
+      }
+    
+    }
   }
 };
 </script>

@@ -4,7 +4,7 @@
       autoplay
       v-once
       :music="{
-    title: 'secret base~君がくれたもの~',
+    title: 'secret  base~君がくれたもの~',
     artist: 'Silent Siren',
     src: 'http://m8.music.126.net/20200106110328/a55697cf3f744a2d743067b3059b99e6/ymusic/5359/0f5e/075a/d370955f4e849960557700479ce0b834.mp3',
     }"
