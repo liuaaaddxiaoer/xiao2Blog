@@ -86,6 +86,7 @@ module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port
   portfinder.getPort((err, port) => {
     if (err) {
+      console.log(err)
       reject(err)
     } else {
       // publish the new Port, necessary for e2e tests
