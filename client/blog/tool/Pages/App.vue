@@ -13,8 +13,11 @@
 import HomeAside from "../components/HomeAside";
 
 export default {
+  name: 'App',
   data() {
-    return {};
+    return {
+      
+    };
   },
   components: {
     HomeAside
