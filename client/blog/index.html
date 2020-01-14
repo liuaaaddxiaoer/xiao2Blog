@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <script
-      charset="UTF-8"
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css">
     <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ if(item.css){ %>
       <link href="<%= item.css %>" rel="stylesheet" />
@@ -14,6 +12,9 @@
   </head>
   <body>
     <div id="app"></div>
+    <script
+      charset="UTF-8"
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
     <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ if(item.js && !htmlWebpackPlugin.options.onlyCss){ %>
       <script type="text/javascript" src="<%= item.js %>"></script>
       <% }}) %>

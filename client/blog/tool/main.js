@@ -10,7 +10,7 @@ import router from './router'
 Vue.use(ElementUI)
 
 new Vue({
-  el: '#app2',
+  el: '#app',
   template: '<App />',
   router,
   components: {
