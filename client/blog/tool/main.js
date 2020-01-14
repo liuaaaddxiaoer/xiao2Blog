@@ -1,7 +1,7 @@
 import '../src/css/reset.less'
 
 import Vue from 'vue'
-import App from '../tool/pages/App.vue'
+import App from './pages/App'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
