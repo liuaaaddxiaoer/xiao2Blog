@@ -110,6 +110,7 @@ exports.externalConfig = [
   { name: 'vue', scope: 'Vue', js: 'vue.min.js' },
   { name: 'vue-router', scope: 'VueRouter', js: 'vue-router.min.js' },
   { name: 'axios', scope: 'axios', js: 'axios.min.js' },
+  { name: 'markdown-it', scope: 'markdownit', js: 'markdown-it.min.js' },
   { name: 'element-ui', scope: 'ELEMENT', js: 'index.js', css: 'theme-chalk/index.css' },
 ];
 
