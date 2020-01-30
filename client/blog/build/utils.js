@@ -103,7 +103,7 @@ exports.createNotifierCallback = () => {
 
 /**------------------ 下面是新增 ------------------*/
 // build/utils.js 国内免费cdn镜像源
-exports.cdnBaseHttp = 'https://cdn.bootcss.com';
+exports.cdnBaseHttp = 'https://cdnjs.cloudflare.com/ajax/libs';
 
 //  build/utils.js external配置
 exports.externalConfig = [
