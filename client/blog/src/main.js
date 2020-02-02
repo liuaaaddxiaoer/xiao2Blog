@@ -16,7 +16,7 @@ Vue.prototype.$http = http
 Vue.prototype.$utils = utils
 
 
-Vue.config.productionTip = true
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({

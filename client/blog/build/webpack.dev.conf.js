@@ -25,7 +25,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
-    clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
         { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
@@ -42,7 +41,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       : false,
     publicPath: config.dev.assetsPublicPath,
     proxy: config.dev.proxyTable,
-    quiet: true, // necessary for FriendlyErrorsPlugin
+    quiet: false, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
       ignored: /node_modules/
@@ -59,14 +58,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
+      template: 'debug.html',
       inject: true,
       excludeChunks: ['tool'],
     }),
 
     new HtmlWebpackPlugin({
       filename: 'tool.html',
-      template: 'tool.html',
+      template: 'debug.html',
       excludeChunks: ['app'],
       inject: true,
     }),
