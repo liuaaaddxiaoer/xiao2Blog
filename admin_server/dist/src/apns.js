@@ -1,4 +1,15 @@
 "use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -13,16 +24,12 @@ var token = {
 };
 // apns cert
 var p12 = {
-    cert: path_1.default.resolve(__dirname, '../../static', 'apns-dev-cert.pem'),
-    key: path_1.default.resolve(__dirname, '../../static', 'apns-dev-key.pem'),
+    cert: path_1.default.resolve(__dirname, '../../static', 'apns_dev_cert.pem'),
+    key: path_1.default.resolve(__dirname, '../../static', 'apns_dev_key.pem'),
     passphrase: '111111',
 };
 // 设置privider
-var privider = new apn_1.default.Provider({
-    token: token,
-    // ...p12,
-    production: false,
-});
+var privider = new apn_1.default.Provider(__assign(__assign({}, p12), { production: false }));
 // 设置推送内容
 var nps = {
     title: 'hello world',

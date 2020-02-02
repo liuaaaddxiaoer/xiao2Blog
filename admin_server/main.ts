@@ -1,19 +1,29 @@
 import Koa from 'koa'
 import router from './src/router'
-import body from 'koa-body'
+import koaBody from 'koa-body'
+import cors from 'koa2-cors'
 
 
 
 const app = new Koa()
 
-// body
-app.use(body({
-  multipart: true, // 可以解析files
+// body]
+app.use(koaBody({
+  multipart: true,
+  formidable: {
+    maxFileSize: 100 * 1024 * 1024, // 100M, default 2M
+    keepExtensions: true,
+  }
+}))
 
-}));
+// 跨域
+app.use(cors())
+
 
 // router
 app.use(router.routes())
+
+
 
 
 

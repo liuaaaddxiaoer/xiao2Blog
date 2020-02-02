@@ -9,7 +9,7 @@ export default {
   delete(key) {
     return localStorage.removeItem(key || '')
   },
-
+ 
   clear() {
     return localStorage.clear()
   }

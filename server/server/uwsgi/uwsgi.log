@@ -210,3 +210,18 @@ Python auto-reloader enabled
 [pid: 8090|app: -1|req: -1/4] 119.80.187.222 () {50 vars in 865 bytes} [Mon Nov 25 16:18:50 2019] POST /api2/api/articleList => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
 Mon Nov 25 16:20:05 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
 Mon Nov 25 16:20:05 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Jan 14 11:21:03 2020] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-39) on 03 January 2020 14:25:26
+os: Linux-3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017
+nodename: liuxiaoer
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /root/site/blog/xiao2Blog/server/server
+writing pidfile to ./uwsgi/uwsgi.pid
+detected binary path: /root/site/blog/xiao2Blog/env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/site/xiao2Blog/server
+chdir(): No such file or directory [core/uwsgi.c line 2623]
