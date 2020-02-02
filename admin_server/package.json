@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch . -e ts --exec node -r ts-node/register main.ts",
+    "dev": "nodemon --watch . -e ts --exec node -r ts-node/register dist/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "dependencies": {
     "apn": "https://github.com/node-apn/node-apn.git",
     "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
   },

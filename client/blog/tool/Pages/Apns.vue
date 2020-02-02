@@ -21,7 +21,7 @@
             <i slot="reference" class="el-icon-question"></i>
           </el-popover>
 
-          <el-input type="text" />
+          <el-input type="text" v-model="bundleId" placeholder="应用程序ID" />
         </div>
 
         <div class="item_container">
@@ -29,7 +29,7 @@
           <el-popover placement="top-start" width="200" trigger="hover" content="申请P8证书时候的Key">
             <i slot="reference" class="el-icon-question"></i>
           </el-popover>
-          <el-input type="text" />
+          <el-input type="text" placeholder="p8证书key" v-model="keyId" />
         </div>
 
         <div class="item_container">
@@ -41,7 +41,7 @@
           >
             <i slot="reference" class="el-icon-question"></i>
           </el-popover>
-          <el-input type="text" />
+          <el-input type="text" v-model="teamId" placeholder="开发者账号ID" />
         </div>
 
         <div class="item_container">
@@ -115,7 +115,10 @@ export default {
   data() {
     return {
       tokenType: "1", // 鉴权方式 1是tokenP8 2 是apns
-      mode: "1" // apns 1是dev 2是dis
+      mode: "1", // apns 1是dev 2是dis
+      bundleId: "", // 用户 bundleId
+      keyId: "", // p8 key ID
+      teamId: "" // 开发者账号ID
     };
   }
 };
