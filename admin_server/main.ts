@@ -11,9 +11,12 @@ const app = new Koa()
 app.use(koaBody({
   multipart: true,
   formidable: {
-    maxFileSize: 100 * 1024 * 1024, // 100M, default 2M
+    maxFileSize: 1 * 1024 * 1024, // 1M, default 2M
     keepExtensions: true,
-  }
+  },
+  onError: (err, ctx) => {
+    ctx.body = err.message
+  },
 }))
 
 // 跨域

@@ -99,7 +99,14 @@
           <span>Apns证书:</span>
           <i class="el-icon-question" />
           <!-- 上传组件 -->
-          <el-upload class="upload-demo" drag action="https://jsonpla">
+          <el-upload
+            class="upload-demo"
+            drag
+            action="http://127.0.0.1:30001/upload/"
+            :data="{
+              '1':2
+            }"
+          >
             <i class="el-icon-upload"></i>
             <div class="el-upload__text">
               将文件拖到此处，或
@@ -137,9 +144,10 @@ export default {
   methods: {
     before_upload(file) {
       console.log(file);
+      return true;
       // bundle id 不可以为空
       let id = this.bundleId;
-      if (file.name.ends == "p8" && id) {
+      if (file.name.endsWith("p8") && id) {
         return true;
       } else {
         return false;
