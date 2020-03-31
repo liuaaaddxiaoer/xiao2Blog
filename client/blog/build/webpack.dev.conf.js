@@ -13,10 +13,13 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+const externalConfig = JSON.parse(JSON.stringify(utils.externalConfig)); // 读取配置
+const externalModules = utils.getExternalModules(externalConfig); // 获取到合适路径和忽略模块
 
 // const VueLoaderPlugin = require('vue-loader-plugin')
 
 const devWebpackConfig = merge(baseWebpackConfig, {
+  externals: externalModules, // 构建时忽略的资源
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },
@@ -58,15 +61,17 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'debug.html',
+      template: 'index.html',
       inject: true,
       excludeChunks: ['tool'],
+      cdnConfig: externalConfig, // cdn配置
     }),
 
     new HtmlWebpackPlugin({
       filename: 'tool.html',
-      template: 'debug.html',
+      template: 'index.html',
       excludeChunks: ['app'],
+      cdnConfig: externalConfig, // cdn配置
       inject: true,
     }),
 
